@@ -1,0 +1,33 @@
+dateModified: 1550051531
+email:
+  fromEmail: andrecorreia.drible@gmail.com
+  fromName: 'We Are Drible'
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  d80a6993-59a6-40cf-ba16-58860e29c890:
+    name: Common
+siteGroups:
+  4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
+    name: 'We Are Drible'
+sites:
+  3e504962-4af6-4a26-bde2-ce55b39496f7:
+    baseUrl: '@web/'
+    handle: index
+    hasUrls: true
+    language: pt
+    name: Home
+    primary: true
+    siteGroup: 4c8248b8-ac7a-4f7a-ad70-fc5e93513af2
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: 'We Are Drible'
+  schemaVersion: 3.1.23
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
