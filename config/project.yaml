@@ -1,4 +1,4 @@
-dateModified: 1550051531
+dateModified: 1550157419
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -6,6 +6,29 @@ email:
 fieldGroups:
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
+fields:
+  9d0714dc-9e47-481f-8107-2d31ad5f9c55:
+    contentColumnType: text
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: texto
+    instructions: ''
+    name: texto
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
     name: 'We Are Drible'
@@ -16,9 +39,9 @@ sites:
     hasUrls: true
     language: pt
     name: Home
-    primary: true
+    primary: '1'
     siteGroup: 4c8248b8-ac7a-4f7a-ad70-fc5e93513af2
-    sortOrder: 1
+    sortOrder: '1'
 system:
   edition: solo
   live: true
