@@ -1,13 +1,30 @@
-dateModified: 1550157419
+dateModified: 1550250599
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  3c2b00e1-b78b-4ff8-8688-d234012d9297:
+    name: matrix
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
 fields:
-  9d0714dc-9e47-481f-8107-2d31ad5f9c55:
+  5b39eeab-123a-4d32-922b-63eeb8814dee:
+    contentColumnType: string
+    fieldGroup: 3c2b00e1-b78b-4ff8-8688-d234012d9297
+    handle: matrix
+    instructions: ''
+    name: matrix
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_matrix}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  d96dc66f-2db7-4e88-a092-c8703484aacb:
     contentColumnType: text
     fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
     handle: texto
@@ -24,11 +41,146 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  f3f889d6-7c45-45fa-a3a1-ff210aa2e2f7:
+    contentColumnType: text
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: nome
+    instructions: ''
+    name: Nome
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+matrixBlockTypes:
+  5c621124-a6b6-4a69-9f08-b7ca5d75cb80:
+    field: 5b39eeab-123a-4d32-922b-63eeb8814dee
+    fieldLayouts:
+      0918fe1b-7502-4d15-a14a-7408c31645e4:
+        tabs:
+          -
+            fields:
+              4de8574a-8a0f-48d3-80f3-59bb4094f2ab:
+                required: '0'
+                sortOrder: 1
+              60323278-c340-476e-ae90-f1511d5c95c2:
+                required: '0'
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      4de8574a-8a0f-48d3-80f3-59bb4094f2ab:
+        contentColumnType: text
+        fieldGroup: null
+        handle: nome
+        instructions: ''
+        name: nome
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      60323278-c340-476e-ae90-f1511d5c95c2:
+        contentColumnType: text
+        fieldGroup: null
+        handle: texto
+        instructions: ''
+        name: texto
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: bannermatrix
+    name: bannermatrix
+    sortOrder: 1
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+sections:
+  a2637aa1-68a6-4238-8112-7ea1bc36bf7c:
+    enableVersioning: true
+    entryTypes:
+      595f4983-d357-45b5-83cc-c111b860e275:
+        fieldLayouts:
+          c3687236-d6db-4942-8d8d-e073ab67b0e6:
+            tabs:
+              -
+                fields:
+                  d96dc66f-2db7-4e88-a092-c8703484aacb:
+                    required: false
+                    sortOrder: 2
+                  f3f889d6-7c45-45fa-a3a1-ff210aa2e2f7:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: teste
+        hasTitleField: true
+        name: teste
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: teste
+    name: teste
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'teste/{slug}'
+    type: channel
+  f6132eea-594e-48bf-9c24-8e0b7e72cf3e:
+    enableVersioning: true
+    entryTypes:
+      6d238de1-3dbd-49f8-b36d-bddb0f4c104f:
+        fieldLayouts:
+          c88aa1c2-0a9f-4657-8b2e-bb9e89e029b8:
+            tabs:
+              -
+                fields:
+                  5b39eeab-123a-4d32-922b-63eeb8814dee:
+                    required: false
+                    sortOrder: 1
+                name: matrix
+                sortOrder: 1
+        handle: matrix
+        hasTitleField: true
+        name: matrix
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: banner
+    name: Banner
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'banner/{slug}'
+    type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
     name: 'We Are Drible'
@@ -47,7 +199,7 @@ system:
   live: true
   name: 'We Are Drible'
   schemaVersion: 3.1.23
-  timeZone: America/Los_Angeles
+  timeZone: Europe/London
 users:
   allowPublicRegistration: false
   defaultGroup: null
