@@ -1,4 +1,4 @@
-dateModified: 1550051531
+dateModified: 1550252057
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -6,6 +6,329 @@ email:
 fieldGroups:
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
+fields:
+  18596776-f1cb-41ca-9a2c-b8c3813eb180:
+    contentColumnType: text
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: mensagem
+    instructions: ''
+    name: Mensagem
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: Texto
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  33d98704-23a0-427b-acd5-1c6fe47cc9f1:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: sectionteste
+    instructions: ''
+    name: SectionTeste
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_sectionteste}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  e1a462ee-aa67-4463-bec6-328412b4261f:
+    contentColumnType: text
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: nome
+    instructions: ''
+    name: Nome
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: Nome
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+matrixBlockTypes:
+  7d55b21d-5903-493d-a3c3-ab2fd61f0823:
+    field: 33d98704-23a0-427b-acd5-1c6fe47cc9f1
+    fieldLayouts:
+      11323ba5-2a1b-4df4-8e11-4c3d5a7e0c01:
+        tabs:
+          -
+            fields:
+              6fa167e0-21fd-43c0-a0a5-9ef62742c2ec:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      6fa167e0-21fd-43c0-a0a5-9ef62742c2ec:
+        contentColumnType: text
+        fieldGroup: null
+        handle: testenome
+        instructions: ''
+        name: testenome
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: testenome
+    name: testenome
+    sortOrder: 1
+  d6a9b2b0-ab78-4702-802c-8a3b2cad4d49:
+    field: 33d98704-23a0-427b-acd5-1c6fe47cc9f1
+    fieldLayouts:
+      bc68e0e3-cf2d-4410-9d82-b7b487057b9f:
+        tabs:
+          -
+            fields:
+              cffe8205-2378-435b-a41d-15fab5f1da09:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      cffe8205-2378-435b-a41d-15fab5f1da09:
+        contentColumnType: text
+        fieldGroup: null
+        handle: testemens
+        instructions: ''
+        name: testemens
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: testemens
+    name: testemens
+    sortOrder: 2
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+sections:
+  2aa082f4-7ddf-480d-9505-71928d0cce16:
+    enableVersioning: true
+    entryTypes:
+      321a12cf-b63e-4928-bce3-9e53c023f557:
+        handle: estagiariosweb
+        hasTitleField: true
+        name: estagiariosweb
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: estagiariosweb
+    name: estagiariosweb
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiariosweb/{slug}'
+    type: channel
+  2af9443c-d1f5-4fab-a950-56fa0f916c9c:
+    enableVersioning: true
+    entryTypes:
+      0a93a963-c882-4390-b8f8-7c1df237275a:
+        handle: estagiariosinicio
+        hasTitleField: true
+        name: estagiariosinicio
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: estagiariosinicio
+    name: estagiariosinicio
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiariosinicio/{slug}'
+    type: channel
+  3e2c251e-47e5-4d54-b710-219241a40fd3:
+    enableVersioning: true
+    entryTypes:
+      e7079a23-553a-48c0-92a8-b0d2f6ef9c24:
+        handle: estagiariosdesign
+        hasTitleField: true
+        name: estagiariosdesign
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: estagiariosdesign
+    name: estagiariosdesign
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiariosdesign/{slug}'
+    type: channel
+  5381c9cf-a708-4766-93e0-249c197371ea:
+    enableVersioning: true
+    entryTypes:
+      d00b442c-27d8-42ea-8ec7-606cfdfb8ae1:
+        handle: web
+        hasTitleField: true
+        name: Web
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: web
+    name: Web
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'web/{slug}'
+    type: channel
+  5912f87b-0e8b-488b-b74a-605f37987b26:
+    enableVersioning: true
+    entryTypes:
+      3c3fcbe7-6769-4a70-bd9f-225c9103155d:
+        handle: marketingdigital
+        hasTitleField: true
+        name: 'Marketing digital'
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: marketingdigital
+    name: 'Marketing digital'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'marketing-digital/{slug}'
+    type: channel
+  83ce53aa-8a13-4498-9442-2ee333f9cbb5:
+    enableVersioning: true
+    entryTypes:
+      40b85c14-b0fe-4614-ba66-0ff278bde55e:
+        handle: estagiarios
+        hasTitleField: true
+        name: estagiarios
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: estagiarios
+    name: Estagiarios
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiarios/{slug}'
+    type: channel
+  8ee29d97-a5d6-4438-86ed-a41692a85c3a:
+    enableVersioning: true
+    entryTypes:
+      3e9e7519-a13a-4d20-9384-e58e8b31c9ca:
+        handle: estagiariosmarketing
+        hasTitleField: true
+        name: estagiariosmarketing
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: estagiariosmarketing
+    name: estagiariosmarketing
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiariosmarketing/{slug}'
+    type: channel
+  ab03ac80-03f4-4c36-ac71-8b38b6716c4e:
+    enableVersioning: true
+    entryTypes:
+      6d6771cd-5cd9-442f-8672-66df34894017:
+        handle: inicio
+        hasTitleField: true
+        name: inicio
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: inicio
+    name: Inicio
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'inicio/{slug}'
+    type: channel
+  b708524d-72d0-4271-aeab-647e1a015205:
+    enableVersioning: true
+    entryTypes:
+      ed882f61-277c-4585-96c7-0abc5090df11:
+        handle: estagiarioslastday
+        hasTitleField: true
+        name: estagiarioslastday
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: estagiarioslastday
+    name: estagiarioslastday
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiarioslastday/{slug}'
+    type: channel
+  fa3ac507-6c8f-4881-8177-ed801e9a46e3:
+    enableVersioning: true
+    entryTypes:
+      b5616e85-a66b-40dd-ab4e-1a5f77eec684:
+        handle: design
+        hasTitleField: true
+        name: Design
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: design
+    name: Design
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'design/{slug}'
+    type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
     name: 'We Are Drible'
@@ -28,6 +351,12 @@ system:
 users:
   allowPublicRegistration: false
   defaultGroup: null
-  photoSubpath: ''
+  fieldLayouts:
+    5247ae61-53a0-467c-9de3-6ba2323174b9:
+      tabs:
+        -
+          name: teste
+          sortOrder: 1
+  photoSubpath: null
   photoVolumeUid: null
   requireEmailVerification: true
