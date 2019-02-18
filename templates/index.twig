@@ -16,20 +16,9 @@
             O Website tem uma secção para estagiários para que os mesmo possam saber o que fazer no primeiro dia e aprendam os primeiros conceitos básicos da sua área. Também tem uma Secção de Design, de Web e de Marketing Digital.
           </p>
 
-
-          <h1>Entry</h1>
-          {% set myEntryQuery = craft.entries().section('teste') %}
-          {% set entries = myEntryQuery.all() %}
-          {% for entry in entries %}
-          <h3>{{ entry.nome }}</h3>
-          <p>{{ entry.texto }}</p>
-          {% endfor %}
-
-          <h1>Matrix</h1>
-          {% for entry in craft.entries.section('banner') %}
-          {% for block in entry.matrix %}
-          <h3>{{ block.nome }}</h3>
-          <p>{{ block.texto }}</p>
+          {% for entry in craft.entries.section('secinit') %}
+          {% for block in entry.matriz %}
+          {{ block.body }}
           {% endfor %}
           {% endfor %}
 

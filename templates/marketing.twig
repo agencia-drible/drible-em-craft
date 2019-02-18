@@ -22,7 +22,7 @@
             <li class="lead">Comprar o produto. (Ação)</li>
           </ul>
           <div class="text-center">
-          <img src="/img/esquema.jpg" class="img-fluid p-3">
+            <img src="/img/esquema.jpg" class="img-fluid p-3">
           </div>
           <h2>Atenção</h2>
           <p class="lead">O principal objetivo da primeira etapa do conceito AIDA é ganhar a atenção do visitante, fazê-lo perceber da oferta.</p>
@@ -43,6 +43,17 @@
           <p class="lead">Tendo instruções claras do que fazer, mantendo um fluxo coerente durante a conversão e não exigindo informações sensíveis ou formulários longos, a conversão tende a acontecer.</p>
           <h2>Como é usado?</h2>
           <p class="lead">O modelo AIDA moldou os pontos de vista sobre marketing e estratégias de vendas por mais de 100 anos. A fórmula ainda pode ser encontrada nos manuais de marketing padrão atuais. Além disso, o AIDA também é usado no RP para planejar e analisar a eficácia das campanhas de RP, e ainda fornece informações valiosas para a análise de mensagens publicitárias. O benefício desta fórmula simples pode ser encontrado em sua simplicidade e possibilidades de aplicações flexíveis em outras áreas. No e-commerce, por exemplo, a eficácia da apresentação do produto em uma loja on-line pode ser analisada usando os quatro aspetos da fórmula AIDA.</p>
+
+          {% for entry in craft.entries.section('secmark') %}
+          {% for block in entry.matriz %}
+          <hr>
+          {{ block.imagem }}
+          <br>
+          {{ block.body }}
+          <code>{{ block.codigo }}</code>
+          {% endfor %}
+          {% endfor %}
+
         </div>
         <div class="col-2"></div>
       </div>

@@ -1,52 +1,33 @@
-dateModified: 1550250599
+dateModified: 1550510925
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
-  3c2b00e1-b78b-4ff8-8688-d234012d9297:
-    name: matrix
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
 fields:
-  5b39eeab-123a-4d32-922b-63eeb8814dee:
+  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
     contentColumnType: string
-    fieldGroup: 3c2b00e1-b78b-4ff8-8688-d234012d9297
-    handle: matrix
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: matriz
     instructions: ''
-    name: matrix
+    name: matriz
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_matrix}}'
+      contentTable: '{{%matrixcontent_matriz}}'
       localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
-  d96dc66f-2db7-4e88-a092-c8703484aacb:
+  e26e61b9-3784-47cd-9be1-473a6634573f:
     contentColumnType: text
     fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: texto
+    handle: dlink
     instructions: ''
-    name: texto
-    searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  f3f889d6-7c45-45fa-a3a1-ff210aa2e2f7:
-    contentColumnType: text
-    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: nome
-    instructions: ''
-    name: Nome
+    name: 'Titulo Para Link'
     searchable: true
     settings:
       charLimit: ''
@@ -59,127 +40,409 @@ fields:
     translationMethod: none
     type: craft\fields\PlainText
 matrixBlockTypes:
-  5c621124-a6b6-4a69-9f08-b7ca5d75cb80:
-    field: 5b39eeab-123a-4d32-922b-63eeb8814dee
+  b567589f-6f54-4779-911a-448e3aaa6f4d:
+    field: 5ae67bb7-b1ca-4421-89b9-a77406ba87fb
     fieldLayouts:
-      0918fe1b-7502-4d15-a14a-7408c31645e4:
+      18621506-a59d-48e1-9888-56ba4a810590:
         tabs:
           -
             fields:
-              4de8574a-8a0f-48d3-80f3-59bb4094f2ab:
-                required: '0'
+              a632abca-2b60-4231-9ee8-268ea321761e:
+                required: false
                 sortOrder: 1
-              60323278-c340-476e-ae90-f1511d5c95c2:
-                required: '0'
-                sortOrder: 2
             name: Content
             sortOrder: 1
     fields:
-      4de8574a-8a0f-48d3-80f3-59bb4094f2ab:
+      a632abca-2b60-4231-9ee8-268ea321761e:
         contentColumnType: text
         fieldGroup: null
-        handle: nome
+        handle: body
         instructions: ''
-        name: nome
-        searchable: '1'
+        name: body
+        searchable: true
         settings:
-          charLimit: ''
-          code: ''
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
-          initialRows: '4'
-          multiline: ''
-          placeholder: ''
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
         translationKeyFormat: null
         translationMethod: none
-        type: craft\fields\PlainText
-      60323278-c340-476e-ae90-f1511d5c95c2:
-        contentColumnType: text
-        fieldGroup: null
-        handle: texto
-        instructions: ''
-        name: texto
-        searchable: '1'
-        settings:
-          charLimit: ''
-          code: ''
-          columnType: text
-          initialRows: '4'
-          multiline: ''
-          placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-    handle: bannermatrix
-    name: bannermatrix
+        type: craft\redactor\Field
+    handle: body
+    name: body
     sortOrder: 1
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
 sections:
-  a2637aa1-68a6-4238-8112-7ea1bc36bf7c:
+  2e1d3e50-4673-4301-a85f-9c0b47273fdb:
     enableVersioning: true
     entryTypes:
-      595f4983-d357-45b5-83cc-c111b860e275:
+      85d580ba-71f3-4fda-af58-49698dee817c:
         fieldLayouts:
-          c3687236-d6db-4942-8d8d-e073ab67b0e6:
+          b823508b-74cb-45e7-bc34-e8e1541cf9ef:
             tabs:
               -
                 fields:
-                  d96dc66f-2db7-4e88-a092-c8703484aacb:
-                    required: false
-                    sortOrder: 2
-                  f3f889d6-7c45-45fa-a3a1-ff210aa2e2f7:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
                     required: false
                     sortOrder: 1
-                name: Common
+                name: 'Tab 1'
                 sortOrder: 1
-        handle: teste
+        handle: secscrpt
         hasTitleField: true
-        name: teste
+        name: secscrpt
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
-    handle: teste
-    name: teste
+    handle: secscrpt
+    name: Script
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
         template: ''
-        uriFormat: 'teste/{slug}'
+        uriFormat: 'secscrpt/{slug}'
     type: channel
-  f6132eea-594e-48bf-9c24-8e0b7e72cf3e:
+  5ad778b5-59a2-4b97-9758-8658d32f3382:
     enableVersioning: true
     entryTypes:
-      6d238de1-3dbd-49f8-b36d-bddb0f4c104f:
+      37fb5dda-f26f-4dfd-b32b-0488ce17b235:
         fieldLayouts:
-          c88aa1c2-0a9f-4657-8b2e-bb9e89e029b8:
+          cae3c0c6-011c-4feb-8fb9-f5042a889fb8:
             tabs:
               -
                 fields:
-                  5b39eeab-123a-4d32-922b-63eeb8814dee:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
                     required: false
                     sortOrder: 1
-                name: matrix
+                name: 'Tab 1'
                 sortOrder: 1
-        handle: matrix
+        handle: secestini
         hasTitleField: true
-        name: matrix
+        name: secestini
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
-    handle: banner
-    name: Banner
+    handle: secestini
+    name: 'Estagiarios Inicio'
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
         template: ''
-        uriFormat: 'banner/{slug}'
+        uriFormat: 'secestini/{slug}'
+    type: channel
+  65d60dc5-9e07-409a-aee5-55f39f83e9bd:
+    enableVersioning: true
+    entryTypes:
+      9b66dd59-3e07-4e33-8c84-2a29b5a40825:
+        fieldLayouts:
+          04be0e85-b4a3-4e66-9277-ccb4a49c853a:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secwebini
+        hasTitleField: true
+        name: secwebini
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secwebini
+    name: 'Web Inicio'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'sevwebini/{slug}'
+    type: channel
+  74bd2609-76ca-4a0e-9a07-95498dfef93d:
+    enableVersioning: true
+    entryTypes:
+      ec344267-bb67-4feb-9623-946bf32cc485:
+        fieldLayouts:
+          1acc1081-fa30-45b7-8b07-6e3a499818c3:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secdsgini
+        hasTitleField: true
+        name: secdsgini
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secdsgini
+    name: 'Design Inicio'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secdsgini/{slug}'
+    type: channel
+  9d14100b-5eb5-4b00-b50c-eb32111eac35:
+    enableVersioning: true
+    entryTypes:
+      636587f4-4e79-43b4-b236-dec2d6802339:
+        fieldLayouts:
+          607c6ab8-d2f4-4d05-b8c8-82433dacfb9f:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secinit
+        hasTitleField: true
+        name: secinit
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secinit
+    name: Home
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secinit/{slug}'
+    type: channel
+  b04f16df-30d9-4a5f-94de-415a86f9f037:
+    enableVersioning: true
+    entryTypes:
+      3b8164f3-e2fc-4f7d-9c2a-4a5e4273169a:
+        fieldLayouts:
+          64d1c510-bee4-44f3-9397-a6dac6b9c4f4:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestdesign
+        hasTitleField: true
+        name: secestdesign
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestdesign
+    name: 'Estagiarios Design'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secestdesign/{slug}'
+    type: channel
+  b1c13b3a-e2e9-4566-84e1-79f48a659a40:
+    enableVersioning: true
+    entryTypes:
+      087145b4-ce19-418e-9962-34c7ab861cbe:
+        fieldLayouts:
+          ee0f3f93-4e19-4799-9675-9ea040247b02:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestweb
+        hasTitleField: true
+        name: secestweb
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestweb
+    name: 'Estagiarios Web'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secestweb/{slug}'
+    type: channel
+  cfa41b3c-3f63-43e9-9579-df24273c648a:
+    enableVersioning: true
+    entryTypes:
+      482196bd-9475-4d78-ace1-70f36e0b8d88:
+        fieldLayouts:
+          3edad9d9-fee3-4497-b2d9-87ab6fe50b67:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secult
+        hasTitleField: true
+        name: secult
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secult
+    name: Ultimo
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secult/{slug}'
+    type: channel
+  d02dc1ee-39ff-4b0f-bbdf-486b6545afe9:
+    enableVersioning: true
+    entryTypes:
+      f54c279d-3052-4377-a5d1-2919e975cc4b:
+        fieldLayouts:
+          aafe7620-7968-46fd-ab2c-50184d7e7416:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secproce
+        hasTitleField: true
+        name: secproce
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secproce
+    name: Processos
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secproce/{slug}'
+    type: channel
+  d56d1cba-b4cb-4522-b45d-d6a04a3e2dbf:
+    enableVersioning: true
+    entryTypes:
+      e2a0ea59-64f5-4ad2-a96d-64fb0a0be780:
+        fieldLayouts:
+          9ae46b69-1015-48f9-9742-465eb1009fd9:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secfront
+        hasTitleField: true
+        name: secfront
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secfront
+    name: Frontend
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secfront/{slug}'
+    type: channel
+  e9531bad-c98d-4d8a-aeab-6257ae574148:
+    enableVersioning: true
+    entryTypes:
+      f4f753d8-e4c1-4e65-a853-f8e6fdaacead:
+        fieldLayouts:
+          5f600c90-cd3b-4389-b93f-a8e6b747c847:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secmark
+        hasTitleField: true
+        name: secmark
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secmark
+    name: Marketing
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secmark/{slug}'
+    type: channel
+  f08e3d51-fecb-466b-a970-f51fe8baf593:
+    enableVersioning: true
+    entryTypes:
+      1d0250f8-e406-4d30-8cf5-f02e0f9732c2:
+        fieldLayouts:
+          276e9a43-7229-4cbb-8fd8-80225cb78faf:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestmark
+        hasTitleField: true
+        name: secestmark
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestmark
+    name: 'Estagiarios Marketing'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'secestmark/{slug}'
     type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:

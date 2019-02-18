@@ -190,6 +190,16 @@
 
       <p class="lead"><b> Se és estagiário de Marketing Digital lê mais <a href="/estagiarios/marketingdigital" target="_blank"> aqui</a></b></p>
 
+      {% for entry in craft.entries.section('secestini') %}
+      {% for block in entry.matriz %}
+      <hr>
+      {{ block.imagem }}
+      <br>
+      {{ block.body }}
+      <code>{{ block.codigo }}</code>
+      {% endfor %}
+      {% endfor %}
+
     </div>
   </main>
 </body>

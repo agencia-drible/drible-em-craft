@@ -112,36 +112,36 @@
 <code> Output </code>
 <p class="lead"></p>
 <table style="width:70%">
-<tr>
-<th> user </th>
-<th> authentication_string </th>
-<th> plugin </th>
-<th> host</th>
-</tr>
-<tr>
-<td> root</td>
-<td></td>
-<td> auth_socket</td>
-<td> localhost</td>
-</tr>
-<tr>
-<td> mysql.session</td>
-<td> *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
-<td> mysql_native_password</td>
-<td> localhost</td>
-</tr>
-<tr>
-<td> mysql.sys</td>
-<td> *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
-<td> mysql_native_password</td>
-<td> localhost</td>
-</tr>
-<tr>
-<td> debian-sys-maint</td>
-<td> *CC744277A401A7D25BE1CA89AFF17BF607F876FF</td>
-<td> mysql_native_password</td>
-<td> localhost</td>
-</tr>
+  <tr>
+    <th> user </th>
+    <th> authentication_string </th>
+    <th> plugin </th>
+    <th> host</th>
+  </tr>
+  <tr>
+    <td> root</td>
+    <td></td>
+    <td> auth_socket</td>
+    <td> localhost</td>
+  </tr>
+  <tr>
+    <td> mysql.session</td>
+    <td> *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
+    <td> mysql_native_password</td>
+    <td> localhost</td>
+  </tr>
+  <tr>
+    <td> mysql.sys</td>
+    <td> *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
+    <td> mysql_native_password</td>
+    <td> localhost</td>
+  </tr>
+  <tr>
+    <td> debian-sys-maint</td>
+    <td> *CC744277A401A7D25BE1CA89AFF17BF607F876FF</td>
+    <td> mysql_native_password</td>
+    <td> localhost</td>
+  </tr>
 </table>
 <p class="lead"></p>
 <p class="lead">In this example, you can see that the <strong>root</strong> user does in fact authenticate using the <code>auth_socket</code> plugin. To configure the <strong>root</strong> account to authenticate with a password, run the following <code>ALTER USER</code> command. Be sure to change <code>password</code> to a strong password of your choosing:</p>
@@ -156,37 +156,37 @@
 <code> Output</code>
 <p class="lead"></p>
 <table style="width:70%">
-<tr>
-<th> user </th>
-<th> authentication_string </th>
-<th> plugin </th>
-<th> host</th>
-</tr>
-<tr>
-<td>root</td>
-<td>*3636DACC8616D997782ADD0839F92C1571D6D78F</td>
-<td>mysql_native_password</td>
-<td>localhost</td>
-</tr>
-<tr>
-<td>mysql.session</td>
-<td>*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
-<td>mysql_native_password</td>
-<td>localhost</td>
-</tr>
-<tr>
-<td>mysql.sys</td>
-<td>*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
-<td>mysql_native_password</td>
-<td>localhost</td>
-</tr>
-<tr>
-<td>debian-sys-maint</td>
-<td>*CC744277A401A7D25BE1CA89AFF17BF607F876FF</td>
-<td>mysql_native_password</td>
-<td>localhost</td>
-</tr>
-<td colspan="4"></td>
+  <tr>
+    <th> user </th>
+    <th> authentication_string </th>
+    <th> plugin </th>
+    <th> host</th>
+  </tr>
+  <tr>
+    <td>root</td>
+    <td>*3636DACC8616D997782ADD0839F92C1571D6D78F</td>
+    <td>mysql_native_password</td>
+    <td>localhost</td>
+  </tr>
+  <tr>
+    <td>mysql.session</td>
+    <td>*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
+    <td>mysql_native_password</td>
+    <td>localhost</td>
+  </tr>
+  <tr>
+    <td>mysql.sys</td>
+    <td>*THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE</td>
+    <td>mysql_native_password</td>
+    <td>localhost</td>
+  </tr>
+  <tr>
+    <td>debian-sys-maint</td>
+    <td>*CC744277A401A7D25BE1CA89AFF17BF607F876FF</td>
+    <td>mysql_native_password</td>
+    <td>localhost</td>
+  </tr>
+  <td colspan="4"></td>
 </table>
 </br>4 rows in set (0.00 sec) </code>
 <p class="lead">You can see in this example output that the <strong>root</strong> MySQL user now authenticates using a password. Once you confirm this on your own server, you can exit the MySQL shell:</p>
@@ -242,7 +242,7 @@ DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm</br
 <p class="lead">Use the arrow keys to scroll up and down, and press <code>Q</code> to quit.</p>
 <p class="lead">The results are all optional components that you can install. It will give you a short description for each:</p>
 <code>bandwidthd-pgsql/bionic 2.0.1+cvs20090917-10ubuntu1 amd64
-Tracks usage of TCP/IP and builds html files with graphs
+  Tracks usage of TCP/IP and builds html files with graphs
 </br>
 bluefish/bionic 2.2.10-1 amd64
 advanced Gtk+ text editor for web and software development
@@ -277,17 +277,17 @@ transitional package for kdevelop-php-l10n
 <p class="lead"></p>
 <p class="lead">Along with a large amount of other information, you'll find something that looks like this:</p>
 <code>Output</br>… </br>
-Description: command-line interpreter for the PHP scripting language (default)
-This package provides the /usr/bin/php command interpreter, useful for
-testing PHP scripts from a shell or performing general shell scripting tasks.
-.
-PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
-open source general-purpose scripting language that is especially suited
-for web development and can be embedded into HTML.
-.
-This package is a dependency package, which depends on Ubuntu's default
-PHP version (currently 7.2).
-…
+  Description: command-line interpreter for the PHP scripting language (default)
+  This package provides the /usr/bin/php command interpreter, useful for
+  testing PHP scripts from a shell or performing general shell scripting tasks.
+  .
+  PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used
+  open source general-purpose scripting language that is especially suited
+  for web development and can be embedded into HTML.
+  .
+  This package is a dependency package, which depends on Ubuntu's default
+  PHP version (currently 7.2).
+  …
 </code>
 <p class="lead"></p>
 <p class="lead">If, after researching, you decide you would like to install a package, you can do so by using the <code>apt install</code> command like you have been doing for the other software.</p>
@@ -332,9 +332,9 @@ PHP version (currently 7.2).
 <p class="lead">As an immediate next step, you should ensure that connections to your web server are secured, by serving them via HTTPS. The easiest option here is to <a href="https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04">use Let's Encrypt</a> to secure your site with a free TLS/SSL certificate.</p>
 <p class="lead">Some other popular options are:</p>
 <ul>
-<li class="lead"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-16-04"> Install Wordpress</a> the most popular content management system on the internet.</li>
-<li class="lead"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04"> Set Up PHPMyAdmin</a> to help manage your MySQL databases from web browser.</li>
-<li class="lead"><a href="https://www.digitalocean.com/community/articles/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server"> Learn how to use SFTP</a> to transfer files to and from your server.</li>
+  <li class="lead"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-wordpress-with-lamp-on-ubuntu-16-04"> Install Wordpress</a> the most popular content management system on the internet.</li>
+  <li class="lead"><a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-18-04"> Set Up PHPMyAdmin</a> to help manage your MySQL databases from web browser.</li>
+  <li class="lead"><a href="https://www.digitalocean.com/community/articles/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server"> Learn how to use SFTP</a> to transfer files to and from your server.</li>
 </ul>
 </div>
 </div>

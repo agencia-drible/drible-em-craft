@@ -3,8 +3,15 @@
 <main class="bd-masthead" id="content" role="main">
       <div class="container">
 
-
-            <h2>Nada Escrito</h2>
+      {% for entry in craft.entries.section('secestmark') %}
+      {% for block in entry.matriz %}
+      <hr>
+      {{ block.imagem }}
+      <br>
+      {{ block.body }}
+      <code>{{ block.codigo }}</code>
+      {% endfor %}
+      {% endfor %}
 
       </div>
 </main>
