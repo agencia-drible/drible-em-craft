@@ -182,14 +182,23 @@
       <p class="lead"> Se tiveres alguma dúvida pergunta ao teu mentor. </p>
 
       <hr>
-      <hr>
 
+      {% for entry in craft.entries.section('estagiariosinicio') %}
+
+      {% for block in entry.editar %}
+
+      {{ block.titulo }}
+      {{ block.mensagem }}
+
+      {% endfor %}
+
+      {% endfor %}
+      <hr>
       <p class="lead"><b> Se és estagiário de Web lê mais <a href="/estagiarios/web" target="_blank"> aqui</a></b></p>
 
       <p class="lead"><b> Se és estagiário de Design lê mais <a href="/estagiarios/design" target="_blank"> aqui</a></b></p>
 
       <p class="lead"><b> Se és estagiário de Marketing Digital lê mais <a href="/estagiarios/marketingdigital" target="_blank"> aqui</a></b></p>
-
     </div>
   </main>
 </body>

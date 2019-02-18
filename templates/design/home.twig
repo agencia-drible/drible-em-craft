@@ -174,31 +174,18 @@
 <h2 class="text-center"> Dados através do CP - Campos de uma Matriz </h2>
 
 <div class="container">
-
-{% set matrix = craft.matrixBlocks() %}
-
-{# Fetch the Matrix blocks #}
-{% set matrixBlocks = matrix.all() %}
-
- {#  {{dump(matrix)}} #}
-
-{% for block in matrixBlocks %}
-
-        <h3> {{ block.testenome }} </h3>
-
-
-{% endfor %}
-
 </div>
 <hr>
 <div class="container">
-{% for entry in craft.entries.section('homepage') %}
-{% for block in entry.sectionteste %}
+{% for entry in craft.entries.section('design') %}
 
-<p class="lead"> {{ block.testenome }}</p>
-<p class="lead">{{ block.testemens }}</p>
+  {% for block in entry.editar %}
 
-{% endfor %}
+    {{ block.titulo }}
+    {{ block.mensagem }}
+
+  {% endfor %}
+
 {% endfor %}
 </div>
 </main>

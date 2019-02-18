@@ -25,6 +25,16 @@
 
             <p class="lead">Acompanhado do bolo, também é tradição fazer um pequeno discurso sobre o que acha da empresa, dos seus funcionários e outros estagiários e do seu trabalho na mesma.</p>
 
+            {% for entry in craft.entries.section('estagiarioslastday') %}
+
+              {% for block in entry.editar %}
+
+                {{ block.titulo }}
+                {{ block.mensagem }}
+
+              {% endfor %}
+
+            {% endfor %}
 
       </div>
 </main>

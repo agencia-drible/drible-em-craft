@@ -1,11 +1,21 @@
 {% extends 'layout' %}
 {% block main %}
 <main class="bd-masthead" id="content" role="main">
-      <div class="container">
+  <div class="container">
 
 
-            <h2>Nada Escrito</h2>
+    <h2>Nada Escrito</h2>
+    <hr>
+    {% for entry in craft.entries.section('estagiariosmarketing') %}
 
-      </div>
+    {% for block in entry.editar %}
+
+    {{ block.titulo }}
+    {{ block.mensagem }}
+
+    {% endfor %}
+
+    {% endfor %}
+  </div>
 </main>
 {% endblock %}

@@ -161,6 +161,17 @@
 
             <p class="lead"><b> Se és estagiário de Marketing Digital lê mais <a href="/estagiarios/marketingdigital" target="_blank"> aqui</a></b></p> -->
 
+            {% for entry in craft.entries.section('webprocessos') %}
+
+              {% for block in entry.editar %}
+
+                {{ block.titulo }}
+                {{ block.mensagem }}
+
+              {% endfor %}
+
+            {% endfor %}
+
       </div>
 </main>
 {% endblock %}

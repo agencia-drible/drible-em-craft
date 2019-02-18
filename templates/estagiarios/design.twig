@@ -5,6 +5,20 @@
 
             <h2>Nada Escrito</h2>
 
+      <hr>
+
+      {% for entry in craft.entries.section('estagiariosdesign') %}
+
+        {% for block in entry.editar %}
+
+          {{ block.titulo }}
+
+          {{ block.mensagem }}
+
+        {% endfor %}
+
+      {% endfor %}
+
       </div>
 
 </main>

@@ -1,4 +1,4 @@
-dateModified: 1550252057
+dateModified: 1550510265
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -7,109 +7,151 @@ fieldGroups:
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
 fields:
-  18596776-f1cb-41ca-9a2c-b8c3813eb180:
-    contentColumnType: text
-    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: mensagem
-    instructions: ''
-    name: Mensagem
-    searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: Texto
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  33d98704-23a0-427b-acd5-1c6fe47cc9f1:
+  2c5c8937-bf8c-463b-834c-fc2489243f4c:
     contentColumnType: string
     fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: sectionteste
-    instructions: ''
-    name: SectionTeste
+    handle: edicao2
+    instructions: 'Aqui poderás inserir conteúdo à pagina!'
+    name: 'Adicionar conteúdo'
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_sectionteste}}'
+      contentTable: '{{%matrixcontent_edicao2}}'
       localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
-  e1a462ee-aa67-4463-bec6-328412b4261f:
-    contentColumnType: text
+  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+    contentColumnType: string
     fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: nome
+    handle: adicionar
     instructions: ''
-    name: Nome
+    name: 'Layout Processos'
     searchable: true
     settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: Nome
+      contentTable: '{{%matrixcontent_adicionar}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
     translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
+    translationMethod: site
+    type: craft\fields\Matrix
+  df163611-9573-4a0a-96a3-c43aabe391e9:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: editar
+    instructions: ''
+    name: editar
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_editar}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  f6b118a4-dd42-44a6-9ba3-b75208332cec:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: rederecionar
+    instructions: 'É obrigatório adicionar o conteúdo à lista. Deverá ter o mesmo nome do título do artigo!'
+    name: 'Adicionar à lista'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_rederecionar}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
 matrixBlockTypes:
-  7d55b21d-5903-493d-a3c3-ab2fd61f0823:
-    field: 33d98704-23a0-427b-acd5-1c6fe47cc9f1
+  06d8f197-b8f2-4e6d-a72d-7d0e86aea742:
+    field: 2c5c8937-bf8c-463b-834c-fc2489243f4c
     fieldLayouts:
-      11323ba5-2a1b-4df4-8e11-4c3d5a7e0c01:
+      11865df3-89ec-413c-b875-cdf2e9751cfa:
         tabs:
           -
             fields:
-              6fa167e0-21fd-43c0-a0a5-9ef62742c2ec:
+              d921c6db-3d61-41dc-9554-15c65db2515e:
+                required: '0'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      d921c6db-3d61-41dc-9554-15c65db2515e:
+        contentColumnType: text
+        fieldGroup: null
+        handle: codigo
+        instructions: ''
+        name: codigo
+        searchable: '1'
+        settings:
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\ckeditor\Field
+    handle: codigo
+    name: codigo
+    sortOrder: 3
+  4455bf9b-dec9-4f29-b495-eb3f6d7d47fe:
+    field: 62aa662d-997b-4226-be5a-cb4c0dc8c919
+    fieldLayouts:
+      cfcd56c4-c4b8-4c9d-800c-241ea28458f7:
+        tabs:
+          -
+            fields:
+              5142ce04-acfc-44a4-be16-7f2a7452a24b:
                 required: false
                 sortOrder: 1
             name: Content
             sortOrder: 1
     fields:
-      6fa167e0-21fd-43c0-a0a5-9ef62742c2ec:
+      5142ce04-acfc-44a4-be16-7f2a7452a24b:
         contentColumnType: text
         fieldGroup: null
-        handle: testenome
+        handle: conteudo
         instructions: ''
-        name: testenome
+        name: Conteudo
         searchable: true
         settings:
-          charLimit: ''
-          code: ''
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
-          initialRows: '4'
-          multiline: ''
-          placeholder: ''
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: ''
         translationKeyFormat: null
         translationMethod: none
-        type: craft\fields\PlainText
-    handle: testenome
-    name: testenome
+        type: craft\redactor\Field
+    handle: conteudo
+    name: Conteudo
     sortOrder: 1
-  d6a9b2b0-ab78-4702-802c-8a3b2cad4d49:
-    field: 33d98704-23a0-427b-acd5-1c6fe47cc9f1
+  71581ca1-1d1a-4daa-a57c-6781d0a8ec05:
+    field: f6b118a4-dd42-44a6-9ba3-b75208332cec
     fieldLayouts:
-      bc68e0e3-cf2d-4410-9d82-b7b487057b9f:
+      f6db8416-8e8b-4a33-8025-3e99678da5ed:
         tabs:
           -
             fields:
-              cffe8205-2378-435b-a41d-15fab5f1da09:
-                required: false
+              132aebe9-7694-41db-a0d5-560dd9683d48:
+                required: '0'
                 sortOrder: 1
             name: Content
             sortOrder: 1
     fields:
-      cffe8205-2378-435b-a41d-15fab5f1da09:
+      132aebe9-7694-41db-a0d5-560dd9683d48:
         contentColumnType: text
         fieldGroup: null
-        handle: testemens
-        instructions: ''
-        name: testemens
-        searchable: true
+        handle: lista
+        instructions: 'Este título da lista, deverá ser igual ao título do artigo!'
+        name: 'Titulo na lista'
+        searchable: '1'
         settings:
           charLimit: ''
           code: ''
@@ -120,24 +162,191 @@ matrixBlockTypes:
         translationKeyFormat: null
         translationMethod: none
         type: craft\fields\PlainText
-    handle: testemens
-    name: testemens
+    handle: lista
+    name: 'Atribuir título'
+    sortOrder: 1
+  7a03f514-598e-445e-884c-7381bea1ffa7:
+    field: df163611-9573-4a0a-96a3-c43aabe391e9
+    fieldLayouts:
+      0a0d349f-1df6-4e51-b8b9-feac7c6766b6:
+        tabs:
+          -
+            fields:
+              3b6af521-1af4-4621-9881-00f7232a0b63:
+                required: '0'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      3b6af521-1af4-4621-9881-00f7232a0b63:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titulo
+        instructions: ''
+        name: Titulo
+        searchable: '1'
+        settings:
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\ckeditor\Field
+    handle: titulo
+    name: Titulo
+    sortOrder: 1
+  9060d39b-e04e-446f-bf14-7c7118302034:
+    field: df163611-9573-4a0a-96a3-c43aabe391e9
+    fieldLayouts:
+      c2ff4617-8470-4cda-ad56-2a40e18ccf93:
+        tabs:
+          -
+            fields:
+              fe8c776c-35e6-4e4a-a881-d5f0c774d2df:
+                required: '0'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      fe8c776c-35e6-4e4a-a881-d5f0c774d2df:
+        contentColumnType: text
+        fieldGroup: null
+        handle: mensagem
+        instructions: ''
+        name: Mensagem
+        searchable: '1'
+        settings:
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\ckeditor\Field
+    handle: mensagem
+    name: Mensagem
+    sortOrder: 2
+  dad13334-fbd3-489a-ab91-3bfbe2900fe4:
+    field: 2c5c8937-bf8c-463b-834c-fc2489243f4c
+    fieldLayouts:
+      1c812d07-1ba2-4a82-846b-d800020a64f2:
+        tabs:
+          -
+            fields:
+              04ca12fc-99ed-4b79-8003-d6bf6b6ee4c5:
+                required: '0'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      04ca12fc-99ed-4b79-8003-d6bf6b6ee4c5:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titulo
+        instructions: 'Deve ser igual à lista!'
+        name: Título
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: 'Deve ser igual à lista!'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: titulo
+    name: 'Título do conteúdo'
+    sortOrder: 1
+  de89d635-5e4a-4161-b2fb-154e3054460f:
+    field: 2c5c8937-bf8c-463b-834c-fc2489243f4c
+    fieldLayouts:
+      4eb4c797-d52b-490c-addd-c03f1df28fd1:
+        tabs:
+          -
+            fields:
+              0ba077c2-6881-4dfd-998c-5bae7c0beefe:
+                required: '0'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      0ba077c2-6881-4dfd-998c-5bae7c0beefe:
+        contentColumnType: text
+        fieldGroup: null
+        handle: mensagem
+        instructions: ''
+        name: Conteúdo
+        searchable: '1'
+        settings:
+          columnType: text
+          purifierConfig: ''
+          purifyHtml: '1'
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\ckeditor\Field
+    handle: mensagem
+    name: Conteúdo
     sortOrder: 2
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
 sections:
+  02a0d967-4c6b-4c11-b5d1-98fd4539bc4b:
+    enableVersioning: true
+    entryTypes:
+      eef536a9-44d1-43e3-b9af-9ce7fef29ed5:
+        fieldLayouts:
+          7ef676e3-7a7a-433f-9e7a-cd505b5ca8a8:
+            tabs:
+              -
+                fields:
+                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+                    required: true
+                    sortOrder: 1
+                name: Processos
+                sortOrder: 1
+        handle: webprocessos
+        hasTitleField: true
+        name: Webprocessos
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: webprocessos
+    name: Webprocessos
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'webprocessos/{slug}'
+    type: channel
   2aa082f4-7ddf-480d-9505-71928d0cce16:
     enableVersioning: true
     entryTypes:
       321a12cf-b63e-4928-bce3-9e53c023f557:
+        fieldLayouts:
+          24223f81-477f-432c-b175-5cdff51d3484:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Web
+                sortOrder: 1
         handle: estagiariosweb
         hasTitleField: true
         name: estagiariosweb
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: estagiariosweb
     name: estagiariosweb
@@ -153,11 +362,21 @@ sections:
     enableVersioning: true
     entryTypes:
       0a93a963-c882-4390-b8f8-7c1df237275a:
+        fieldLayouts:
+          a8fac8e5-fa9b-4cb8-a975-809ae749a6fd:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Inicio
+                sortOrder: 1
         handle: estagiariosinicio
         hasTitleField: true
         name: estagiariosinicio
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: estagiariosinicio
     name: estagiariosinicio
@@ -173,11 +392,21 @@ sections:
     enableVersioning: true
     entryTypes:
       e7079a23-553a-48c0-92a8-b0d2f6ef9c24:
+        fieldLayouts:
+          ca39f9af-4dfe-4396-a279-753a3f43f848:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Desgin
+                sortOrder: 1
         handle: estagiariosdesign
         hasTitleField: true
         name: estagiariosdesign
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: estagiariosdesign
     name: estagiariosdesign
@@ -189,18 +418,58 @@ sections:
         template: ''
         uriFormat: 'estagiariosdesign/{slug}'
     type: channel
+  449613a1-93d9-450b-90bc-a49cf2bf5348:
+    enableVersioning: true
+    entryTypes:
+      514dfc8a-76e1-4c24-86ed-14df1ddf58c5:
+        fieldLayouts:
+          7d95a552-175e-4f7d-86bd-fec6be44c9a6:
+            tabs:
+              -
+                fields:
+                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+                    required: false
+                    sortOrder: 1
+                name: Scripts
+                sortOrder: 1
+        handle: webscripts
+        hasTitleField: true
+        name: Webscripts
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: webscripts
+    name: Webscripts
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'webscripts/{slug}'
+    type: channel
   5381c9cf-a708-4766-93e0-249c197371ea:
     enableVersioning: true
     entryTypes:
       d00b442c-27d8-42ea-8ec7-606cfdfb8ae1:
-        handle: web
+        fieldLayouts:
+          0dd28056-9c60-4534-bb37-44a740b49e5a:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Inicio
+                sortOrder: 1
+        handle: webinicio
         hasTitleField: true
-        name: Web
+        name: Webinicio
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
-    handle: web
-    name: Web
+    handle: webinicio
+    name: Webinicio
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
@@ -213,11 +482,21 @@ sections:
     enableVersioning: true
     entryTypes:
       3c3fcbe7-6769-4a70-bd9f-225c9103155d:
+        fieldLayouts:
+          9f6818b6-d7c9-4620-b6b5-b91892e254d8:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: 'Marketing Digital'
+                sortOrder: 1
         handle: marketingdigital
         hasTitleField: true
         name: 'Marketing digital'
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: marketingdigital
     name: 'Marketing digital'
@@ -228,6 +507,36 @@ sections:
         hasUrls: true
         template: ''
         uriFormat: 'marketing-digital/{slug}'
+    type: channel
+  685ce4ee-3104-4cec-b39e-6d39fe16a610:
+    enableVersioning: true
+    entryTypes:
+      4028929c-e6d2-457e-aa4d-de25ae29658d:
+        fieldLayouts:
+          060fd8e0-24a9-4a80-93d5-d393a7dab265:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Frontend
+                sortOrder: 1
+        handle: webfrontend
+        hasTitleField: true
+        name: Webfrontend
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: webfrontend
+    name: Webfrontend
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'webfrontend/{slug}'
     type: channel
   83ce53aa-8a13-4498-9442-2ee333f9cbb5:
     enableVersioning: true
@@ -253,11 +562,21 @@ sections:
     enableVersioning: true
     entryTypes:
       3e9e7519-a13a-4d20-9384-e58e8b31c9ca:
+        fieldLayouts:
+          01ed8c0e-68d4-42bf-99a5-db177316878f:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Marketing
+                sortOrder: 1
         handle: estagiariosmarketing
         hasTitleField: true
         name: estagiariosmarketing
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: estagiariosmarketing
     name: estagiariosmarketing
@@ -273,11 +592,21 @@ sections:
     enableVersioning: true
     entryTypes:
       6d6771cd-5cd9-442f-8672-66df34894017:
+        fieldLayouts:
+          d978dd04-a016-462c-bc6e-0eb89e37a9d2:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Inicio
+                sortOrder: 1
         handle: inicio
         hasTitleField: true
         name: inicio
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: inicio
     name: Inicio
@@ -293,11 +622,21 @@ sections:
     enableVersioning: true
     entryTypes:
       ed882f61-277c-4585-96c7-0abc5090df11:
+        fieldLayouts:
+          30ea1834-2ecc-47fb-bb64-23e11659fa8f:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Lastday
+                sortOrder: 1
         handle: estagiarioslastday
         hasTitleField: true
         name: estagiarioslastday
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: estagiarioslastday
     name: estagiarioslastday
@@ -313,11 +652,21 @@ sections:
     enableVersioning: true
     entryTypes:
       b5616e85-a66b-40dd-ab4e-1a5f77eec684:
+        fieldLayouts:
+          36f2f747-b63b-4ed7-abe8-783c3bca0fcd:
+            tabs:
+              -
+                fields:
+                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                    required: false
+                    sortOrder: 1
+                name: Design
+                sortOrder: 1
         handle: design
         hasTitleField: true
         name: Design
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Título
     handle: design
     name: Design
