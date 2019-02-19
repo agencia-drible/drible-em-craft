@@ -5,11 +5,7 @@
 
       {% for entry in craft.entries.section('secestmark') %}
       {% for block in entry.matriz %}
-      <hr>
-      {{ block.imagem }}
-      <br>
       {{ block.body }}
-      <code>{{ block.codigo }}</code>
       {% endfor %}
       {% endfor %}
 

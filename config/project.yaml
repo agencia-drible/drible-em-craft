@@ -1,4 +1,4 @@
-dateModified: 1550510925
+dateModified: 1550570295
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -48,7 +48,7 @@ matrixBlockTypes:
           -
             fields:
               a632abca-2b60-4231-9ee8-268ea321761e:
-                required: false
+                required: '0'
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -59,7 +59,7 @@ matrixBlockTypes:
         handle: body
         instructions: ''
         name: body
-        searchable: true
+        searchable: '1'
         settings:
           availableTransforms: '*'
           availableVolumes: '*'
@@ -67,7 +67,7 @@ matrixBlockTypes:
           columnType: text
           purifierConfig: ''
           purifyHtml: '1'
-          redactorConfig: ''
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
         type: craft\redactor\Field
@@ -469,3 +469,13 @@ users:
   photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
+volumes:
+  75c7b344-e4a8-4a63-8637-a10ebdde28cd:
+    handle: img
+    hasUrls: false
+    name: Img
+    settings:
+      path: /img
+    sortOrder: 1
+    type: craft\volumes\Local
+    url: ''

@@ -2,11 +2,13 @@
 {% block main %}
 <main class="bd-masthead" id="content" role="main">
   <div class="container">
+
     {% for entry in craft.entries.section('secproce') %}
     {% for block in entry.matriz %}
     {{ block.body }}
     {% endfor %}
     {% endfor %}
+    
   </div>
 </main>
 {% endblock %}
