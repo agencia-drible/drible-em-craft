@@ -1,4 +1,4 @@
-dateModified: 1550510265
+dateModified: 1550572013
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -89,12 +89,16 @@ matrixBlockTypes:
         name: codigo
         searchable: '1'
         settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
           purifierConfig: ''
           purifyHtml: '1'
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
-        type: craft\ckeditor\Field
+        type: craft\redactor\Field
     handle: codigo
     name: codigo
     sortOrder: 3
@@ -106,7 +110,7 @@ matrixBlockTypes:
           -
             fields:
               5142ce04-acfc-44a4-be16-7f2a7452a24b:
-                required: false
+                required: '0'
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -117,7 +121,7 @@ matrixBlockTypes:
         handle: conteudo
         instructions: ''
         name: Conteudo
-        searchable: true
+        searchable: '1'
         settings:
           availableTransforms: '*'
           availableVolumes: '*'
@@ -125,7 +129,7 @@ matrixBlockTypes:
           columnType: text
           purifierConfig: ''
           purifyHtml: '1'
-          redactorConfig: ''
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
         type: craft\redactor\Field
@@ -186,12 +190,16 @@ matrixBlockTypes:
         name: Titulo
         searchable: '1'
         settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
           purifierConfig: ''
           purifyHtml: '1'
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
-        type: craft\ckeditor\Field
+        type: craft\redactor\Field
     handle: titulo
     name: Titulo
     sortOrder: 1
@@ -216,12 +224,16 @@ matrixBlockTypes:
         name: Mensagem
         searchable: '1'
         settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
           purifierConfig: ''
           purifyHtml: '1'
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
-        type: craft\ckeditor\Field
+        type: craft\redactor\Field
     handle: mensagem
     name: Mensagem
     sortOrder: 2
@@ -246,15 +258,16 @@ matrixBlockTypes:
         name: Título
         searchable: '1'
         settings:
-          charLimit: ''
-          code: ''
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
-          initialRows: '4'
-          multiline: ''
-          placeholder: 'Deve ser igual à lista!'
+          purifierConfig: ''
+          purifyHtml: '1'
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
-        type: craft\fields\PlainText
+        type: craft\redactor\Field
     handle: titulo
     name: 'Título do conteúdo'
     sortOrder: 1
@@ -279,12 +292,16 @@ matrixBlockTypes:
         name: Conteúdo
         searchable: '1'
         settings:
+          availableTransforms: '*'
+          availableVolumes: '*'
+          cleanupHtml: '1'
           columnType: text
           purifierConfig: ''
           purifyHtml: '1'
+          redactorConfig: Standard.json
         translationKeyFormat: null
         translationMethod: none
-        type: craft\ckeditor\Field
+        type: craft\redactor\Field
     handle: mensagem
     name: Conteúdo
     sortOrder: 2
@@ -308,7 +325,7 @@ sections:
               -
                 fields:
                   62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: true
+                    required: false
                     sortOrder: 1
                 name: Processos
                 sortOrder: 1
@@ -517,7 +534,7 @@ sections:
             tabs:
               -
                 fields:
-                  df163611-9573-4a0a-96a3-c43aabe391e9:
+                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
                     required: false
                     sortOrder: 1
                 name: Frontend
@@ -709,3 +726,23 @@ users:
   photoSubpath: null
   photoVolumeUid: null
   requireEmailVerification: true
+volumes:
+  0d4b0993-7f8e-496b-85fa-26a8726d211b:
+    fieldLayouts:
+      1b2c8c13-a8f1-4244-92e0-8d8bfc664f88:
+        tabs:
+          -
+            fields:
+              62aa662d-997b-4226-be5a-cb4c0dc8c919:
+                required: false
+                sortOrder: 1
+            name: Conteúdo
+            sortOrder: 1
+    handle: img
+    hasUrls: false
+    name: img
+    settings:
+      path: /img/
+    sortOrder: null
+    type: craft\volumes\Local
+    url: ''
