@@ -3,17 +3,12 @@
 <main class="bd-masthead" id="content" role="main">
       <div class="container">
 
-            <h2>Nada Escrito</h2>
-
-      <hr>
-
       {% for entry in craft.entries.section('estagiariosdesign') %}
 
-        {% for block in entry.editar %}
+        {% for block in entry.adicionar %}
 
-          {{ block.titulo }}
+          {{ block.conteudo }}
 
-          {{ block.mensagem }}
 
         {% endfor %}
 
