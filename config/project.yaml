@@ -1,4 +1,4 @@
-dateModified: 1550570295
+dateModified: 1550596236
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -472,10 +472,10 @@ users:
 volumes:
   75c7b344-e4a8-4a63-8637-a10ebdde28cd:
     handle: img
-    hasUrls: false
+    hasUrls: true
     name: Img
     settings:
-      path: /img
-    sortOrder: 1
+      path: '@webroot/img'
+    sortOrder: null
     type: craft\volumes\Local
-    url: ''
+    url: '@web/img'

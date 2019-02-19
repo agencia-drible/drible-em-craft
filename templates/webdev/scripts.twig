@@ -1,14 +1,22 @@
 {% extends 'layout' %}
 {% block main %}
 <main class="bd-masthead" id="content" role="main">
+  {% set myAssetQuery = craft.assets() %}
+  {% set images = myAssetQuery.all() %}
+  {% for entry in craft.entries.section('secscrpt') %}
+  {% for block in entry.matriz %}
   <div class="container">
 
-    {% for entry in craft.entries.section('secscrpt') %}
-    {% for block in entry.matriz %}
-    {{ block.body }}
-    {% endfor %}
-    {% endfor %}
-    
+
+    <div class="col-12">
+      <article class="article-body">
+        {{ block.body }}
+      </article>
+    </main>
+
+
   </div>
+  {% endfor %}
+  {% endfor %}
 </main>
 {% endblock %}
