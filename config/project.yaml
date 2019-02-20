@@ -1,4 +1,4 @@
-dateModified: 1550596236
+dateModified: 1550675903
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -22,23 +22,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
-  e26e61b9-3784-47cd-9be1-473a6634573f:
-    contentColumnType: text
-    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: dlink
-    instructions: ''
-    name: 'Titulo Para Link'
-    searchable: true
-    settings:
-      charLimit: ''
-      code: ''
-      columnType: text
-      initialRows: '4'
-      multiline: ''
-      placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
 matrixBlockTypes:
   b567589f-6f54-4779-911a-448e3aaa6f4d:
     field: 5ae67bb7-b1ca-4421-89b9-a77406ba87fb
@@ -94,6 +77,9 @@ sections:
               -
                 fields:
                   5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 2
+                  5f272906-37c3-4c68-9b8f-f0b085237d61:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
@@ -335,6 +321,9 @@ sections:
                 fields:
                   5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
                     required: false
+                    sortOrder: 2
+                  5f272906-37c3-4c68-9b8f-f0b085237d61:
+                    required: false
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
@@ -353,6 +342,36 @@ sections:
         hasUrls: true
         template: ''
         uriFormat: 'secproce/{slug}'
+    type: channel
+  d170c2ba-3709-4bb5-bf0f-552fb8c028b6:
+    enableVersioning: true
+    entryTypes:
+      b1cb3fff-2121-4f23-8988-812cd17569a1:
+        fieldLayouts:
+          2ff96206-eddc-430e-b10c-037da0f9ae5a:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestwebdrible
+        hasTitleField: true
+        name: Estagiarios-web-hellodrible
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestwebdrible
+    name: Estagiarios-web-hellodrible
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'estagiarios-web-hellodrible/{slug}'
     type: channel
   d56d1cba-b4cb-4522-b45d-d6a04a3e2dbf:
     enableVersioning: true

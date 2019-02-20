@@ -3,13 +3,17 @@
 <body>
   <main class="bd-masthead" id="content" role="main">
     <div class="container">
-
-      {% for entry in craft.entries.section('secestini') %}
-      {% for block in entry.matriz %}
-      {{ block.body }}
-      {% endfor %}
-      {% endfor %}
-
+      <div class="row">
+        <div class="col-1 col-sm-0 col-md-0"></div>
+        <div class="col-lg-10 col-sm-12 col-md-12">
+          {% for entry in craft.entries.section('secestini') %}
+          {% for block in entry.matriz %}
+          {{ block.body }}
+          {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="col-1 col-sm-0 col-md-0"></div>
+      </div>
     </div>
   </main>
 </body>

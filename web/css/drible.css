@@ -57,6 +57,9 @@ img{
 
 }
 
+.ank-link {
+  color: black;
+}
 
 @media (min-width: 768px){
       .p-md-5 {
