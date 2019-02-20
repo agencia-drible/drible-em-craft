@@ -1,3 +1,10 @@
+/* CUSTOM */
+
+h5.titulo-lista{
+  color:#D0AE83 !important;
+  font-size:2rem;
+}
+
 /* BackGround Color change*/
 .bd-navbar {
       background-color: #000;
