@@ -1,4 +1,4 @@
-dateModified: 1550675903
+dateModified: 1550771092
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -90,15 +90,15 @@ sections:
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
-    handle: secscrpt
-    name: Script
+    handle: scripts
+    name: Scripts
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'secscrpt/{slug}'
+        template: entry.twig
+        uriFormat: 'scripts/{slug}'
     type: channel
   5ad778b5-59a2-4b97-9758-8658d32f3382:
     enableVersioning: true
@@ -127,7 +127,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secestini/{slug}'
     type: channel
   65d60dc5-9e07-409a-aee5-55f39f83e9bd:
@@ -157,8 +157,28 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'sevwebini/{slug}'
+    type: channel
+  68c9bf3f-9c5e-4821-91f0-f22dd52ace6c:
+    enableVersioning: true
+    entryTypes:
+      47972020-0f8a-4346-b283-d20fdb241910:
+        handle: listas
+        hasTitleField: true
+        name: Listas
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: listas
+    name: Listas
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: listas/index.twig
+        uriFormat: '{slug}'
     type: channel
   74bd2609-76ca-4a0e-9a07-95498dfef93d:
     enableVersioning: true
@@ -187,7 +207,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secdsgini/{slug}'
     type: channel
   9d14100b-5eb5-4b00-b50c-eb32111eac35:
@@ -217,7 +237,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secinit/{slug}'
     type: channel
   b04f16df-30d9-4a5f-94de-415a86f9f037:
@@ -247,7 +267,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secestdesign/{slug}'
     type: channel
   b1c13b3a-e2e9-4566-84e1-79f48a659a40:
@@ -277,7 +297,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secestweb/{slug}'
     type: channel
   cfa41b3c-3f63-43e9-9579-df24273c648a:
@@ -307,7 +327,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secult/{slug}'
     type: channel
   d02dc1ee-39ff-4b0f-bbdf-486b6545afe9:
@@ -340,7 +360,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secproce/{slug}'
     type: channel
   d170c2ba-3709-4bb5-bf0f-552fb8c028b6:
@@ -370,7 +390,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'estagiarios-web-hellodrible/{slug}'
     type: channel
   d56d1cba-b4cb-4522-b45d-d6a04a3e2dbf:
@@ -400,7 +420,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secfront/{slug}'
     type: channel
   e9531bad-c98d-4d8a-aeab-6257ae574148:
@@ -430,7 +450,7 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secmark/{slug}'
     type: channel
   f08e3d51-fecb-466b-a970-f51fe8baf593:
@@ -460,8 +480,38 @@ sections:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
+        template: entry.twig
         uriFormat: 'secestmark/{slug}'
+    type: channel
+  f688424a-01ac-42ef-9adb-63519d17132b:
+    enableVersioning: true
+    entryTypes:
+      bbf8c06a-52f5-4350-b581-806e7397f3a3:
+        fieldLayouts:
+          2f8abd29-9c21-4e57-a973-a09bd347d2da:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: Common
+                sortOrder: 1
+        handle: designprogramas
+        hasTitleField: true
+        name: designprogramas
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: designprogramas
+    name: designprogramas
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'designprogramas/{slug}'
     type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
