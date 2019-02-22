@@ -1,4 +1,4 @@
-dateModified: 1550836110
+dateModified: 1550858217
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -16,6 +16,21 @@ fields:
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_matriz}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  e6457699-d552-41f4-9888-d97d0cc0add5:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: links
+    instructions: ''
+    name: links
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_links}}'
       localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
@@ -56,6 +71,79 @@ matrixBlockTypes:
         type: craft\redactor\Field
     handle: body
     name: body
+    sortOrder: 1
+  f68298a1-7600-46af-a5eb-822aa731d8e7:
+    field: e6457699-d552-41f4-9888-d97d0cc0add5
+    fieldLayouts:
+      00cb68d5-dff5-40c8-9ab9-de09b412dacc:
+        tabs:
+          -
+            fields:
+              2780dde2-94da-48aa-827d-a68fec71cb58:
+                required: false
+                sortOrder: 2
+              9d6036a6-4135-4848-b85c-9be602392b23:
+                required: false
+                sortOrder: 3
+              c40eddfc-caa3-4771-9a57-304a5407c55f:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      2780dde2-94da-48aa-827d-a68fec71cb58:
+        contentColumnType: text
+        fieldGroup: null
+        handle: dlink
+        instructions: ''
+        name: dlink
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      9d6036a6-4135-4848-b85c-9be602392b23:
+        contentColumnType: text
+        fieldGroup: null
+        handle: drop
+        instructions: ''
+        name: drop
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      c40eddfc-caa3-4771-9a57-304a5407c55f:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titulo
+        instructions: ''
+        name: titulo
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: titulo
+    name: titulo
     sortOrder: 1
 plugins:
   ckeditor:
@@ -99,6 +187,36 @@ sections:
         hasUrls: true
         template: entry.twig
         uriFormat: 'scripts/{slug}'
+    type: channel
+  376d285a-4661-45ea-8cf4-43db0ec693ae:
+    enableVersioning: true
+    entryTypes:
+      08bb1b96-60c2-49a6-8d80-14eea55b6b61:
+        fieldLayouts:
+          a6e58471-949b-480c-b090-81b6a5879cbc:
+            tabs:
+              -
+                fields:
+                  e6457699-d552-41f4-9888-d97d0cc0add5:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: menu
+        hasTitleField: true
+        name: menu
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: menu
+    name: menu
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'menu/{slug}'
     type: channel
   5ad778b5-59a2-4b97-9758-8658d32f3382:
     enableVersioning: true
