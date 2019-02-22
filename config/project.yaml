@@ -1,4 +1,4 @@
-dateModified: 1550771092
+dateModified: 1550836110
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -144,9 +144,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secwebini
+        handle: secwebiniq
         hasTitleField: true
-        name: secwebini
+        name: secwebiniq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -158,7 +158,7 @@ sections:
         enabledByDefault: true
         hasUrls: true
         template: entry.twig
-        uriFormat: 'sevwebini/{slug}'
+        uriFormat: 'secwebini/{slug}'
     type: channel
   68c9bf3f-9c5e-4821-91f0-f22dd52ace6c:
     enableVersioning: true
@@ -194,9 +194,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secdsgini
+        handle: secdsginiq
         hasTitleField: true
-        name: secdsgini
+        name: secdsginiq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -224,9 +224,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secinit
+        handle: secinitq
         hasTitleField: true
-        name: secinit
+        name: secinitq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -284,9 +284,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secestweb
+        handle: secestwebq
         hasTitleField: true
-        name: secestweb
+        name: secestwebq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -314,9 +314,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secult
+        handle: secultq
         hasTitleField: true
-        name: secult
+        name: secultq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -341,27 +341,24 @@ sections:
                 fields:
                   5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
                     required: false
-                    sortOrder: 2
-                  5f272906-37c3-4c68-9b8f-f0b085237d61:
-                    required: false
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secproce
+        handle: secprocew
         hasTitleField: true
-        name: secproce
+        name: secproces
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
-    handle: secproce
+    handle: processos
     name: Processos
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: entry.twig
-        uriFormat: 'secproce/{slug}'
+        template: /entry.twig
+        uriFormat: 'processos/{slug}'
     type: channel
   d170c2ba-3709-4bb5-bf0f-552fb8c028b6:
     enableVersioning: true
@@ -407,9 +404,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secfront
+        handle: secfrontq
         hasTitleField: true
-        name: secfront
+        name: secfrontq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -437,9 +434,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secmark
+        handle: secmarkq
         hasTitleField: true
-        name: secmark
+        name: secmarkq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -467,9 +464,9 @@ sections:
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: secestmark
+        handle: secestmarkq
         hasTitleField: true
-        name: secestmark
+        name: secestmarkq
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
@@ -482,36 +479,6 @@ sections:
         hasUrls: true
         template: entry.twig
         uriFormat: 'secestmark/{slug}'
-    type: channel
-  f688424a-01ac-42ef-9adb-63519d17132b:
-    enableVersioning: true
-    entryTypes:
-      bbf8c06a-52f5-4350-b581-806e7397f3a3:
-        fieldLayouts:
-          2f8abd29-9c21-4e57-a973-a09bd347d2da:
-            tabs:
-              -
-                fields:
-                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
-                    required: false
-                    sortOrder: 1
-                name: Common
-                sortOrder: 1
-        handle: designprogramas
-        hasTitleField: true
-        name: designprogramas
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: designprogramas
-    name: designprogramas
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: entry.twig
-        uriFormat: 'designprogramas/{slug}'
     type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
