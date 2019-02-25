@@ -1,4 +1,4 @@
-dateModified: 1550858217
+dateModified: 1551086792
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -80,13 +80,13 @@ matrixBlockTypes:
           -
             fields:
               2780dde2-94da-48aa-827d-a68fec71cb58:
-                required: false
+                required: '0'
                 sortOrder: 2
               9d6036a6-4135-4848-b85c-9be602392b23:
-                required: false
+                required: '0'
                 sortOrder: 3
               c40eddfc-caa3-4771-9a57-304a5407c55f:
-                required: false
+                required: '0'
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -97,7 +97,7 @@ matrixBlockTypes:
         handle: dlink
         instructions: ''
         name: dlink
-        searchable: true
+        searchable: '1'
         settings:
           charLimit: ''
           code: ''
@@ -114,7 +114,7 @@ matrixBlockTypes:
         handle: drop
         instructions: ''
         name: drop
-        searchable: true
+        searchable: '1'
         settings:
           charLimit: ''
           code: ''
@@ -131,7 +131,7 @@ matrixBlockTypes:
         handle: titulo
         instructions: ''
         name: titulo
-        searchable: true
+        searchable: '1'
         settings:
           charLimit: ''
           code: ''
@@ -327,6 +327,36 @@ sections:
         hasUrls: true
         template: entry.twig
         uriFormat: 'secdsgini/{slug}'
+    type: channel
+  996b1040-6221-41d5-ab49-9171dbcb9fe4:
+    enableVersioning: true
+    entryTypes:
+      dd2a7d4c-927d-45bb-93e2-be9db731beb8:
+        fieldLayouts:
+          c095727b-49da-48e8-aa9c-f790eb714fae:
+            tabs:
+              -
+                fields:
+                  e6457699-d552-41f4-9888-d97d0cc0add5:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: menudrop
+        hasTitleField: true
+        name: menudrop
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: menudrop
+    name: menudrop
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'menudrop/{slug}'
     type: channel
   9d14100b-5eb5-4b00-b50c-eb32111eac35:
     enableVersioning: true

@@ -54,44 +54,47 @@
 
         {% for entry in craft.entries.section('menu') %}
         {% for block in entry.links %}
-        {{dump(block.drop|length)}}
-        {% if block.drop|length > 0 %}
         <li class="nav-item">
           <a class="nav-link active" href="{{block.dlink}}">{{block.titulo}}</a>
         </li>
-        {% else %}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{block.title}}</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="{{block.dlink}}">{{block.titulo}}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
 
-          <!-- <li class="nav-item">
-          <a class="nav-link active" href="/">Início</a>
-        </li>
+        {% endfor %}
+        {% endfor %}
+        {% for entry in craft.entries.section('menudrop') %}
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estagiários</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-        <a class="dropdown-item" href="/secestini/home">Início</a>
-        <a class="dropdown-item" href="/secestweb">Estagiários de Web</a>
-        <a class="dropdown-item" href="/secestdesign">Estagiários de Design</a>
-        <a class="dropdown-item" href="/secestmark">Estagiários de Marketing Digital</a>
-        <a class="dropdown-item" href="/secult/lastday">Último Dia</a>
-      </div>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link " href="/secdsgini/home">Design</a>
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{entry.title}}</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            {% for block in entry.links %}
+            <a class="dropdown-item" href="{{block.dlink}}">{{block.titulo}}</a>
+            {% endfor %}
+          </div>
+        </li>
+        {% endfor %}
+
+
+        <!-- <li class="nav-item">
+        <a class="nav-link active" href="/">Início</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Estagiários</a>
+      <div class="dropdown-menu" aria-labelledby="dropdown01">
+      <a class="dropdown-item" href="/secestini/home">Início</a>
+      <a class="dropdown-item" href="/secestweb">Estagiários de Web</a>
+      <a class="dropdown-item" href="/secestdesign">Estagiários de Design</a>
+      <a class="dropdown-item" href="/secestmark">Estagiários de Marketing Digital</a>
+      <a class="dropdown-item" href="/secult/lastday">Último Dia</a>
+    </div>
   </li>
-  <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Web</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown02">
-  <a class="dropdown-item" href="/secwebini/home">Início</a>
-  <a class="dropdown-item" href="/scripts">Scripts</a>
-  <a class="dropdown-item" href="/processos">Processos</a>
-  <a class="dropdown-item" href="/secfront">Front-end</a>
+  <li class="nav-item">
+  <a class="nav-link " href="/secdsgini/home">Design</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Web</a>
+<div class="dropdown-menu" aria-labelledby="dropdown02">
+<a class="dropdown-item" href="/secwebini/home">Início</a>
+<a class="dropdown-item" href="/scripts">Scripts</a>
+<a class="dropdown-item" href="/processos">Processos</a>
+<a class="dropdown-item" href="/secfront">Front-end</a>
 </div>
 </li>
 <li class="nav-item">
