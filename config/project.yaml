@@ -1,4 +1,4 @@
-dateModified: 1551089537
+dateModified: 1551196409
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
@@ -9,6 +9,21 @@ fieldGroups:
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
 fields:
+  01928454-af50-45be-9308-176532fed456:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: links
+    instructions: ''
+    name: links
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_links}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   050417d3-f9ec-4972-a7b7-d305239f2dd7:
     contentColumnType: text
     fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
@@ -75,6 +90,22 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  49e333ec-3c89-4978-99ce-59de0d5c3c04:
+    contentColumnType: smallint(2)
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: inposition
+    instructions: ''
+    name: inposition
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: '10'
+      min: '0'
+      size: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
   5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
     contentColumnType: string
     fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
@@ -90,6 +121,35 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+  6719b3f6-b2b7-4337-864c-488cf4b8843b:
+    contentColumnType: text
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: uurl
+    instructions: ''
+    name: url
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9aec6c12-5c00-4015-9494-53c5b1a3b160:
+    contentColumnType: boolean
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: isdrop
+    instructions: ''
+    name: isdrop
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
   cfb1df79-c93c-4a82-8e48-23d7b5f90789:
     contentColumnType: text
     fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
@@ -209,6 +269,59 @@ matrixBlockTypes:
         type: craft\redactor\Field
     handle: body
     name: body
+    sortOrder: 1
+  b5b78214-c238-4283-9cef-24f3e9e1d8a5:
+    field: 01928454-af50-45be-9308-176532fed456
+    fieldLayouts:
+      1e680e6c-5434-46da-a924-48a41ce89fc3:
+        tabs:
+          -
+            fields:
+              4c30acfb-8ba5-4ea7-ba87-6f41813ce876:
+                required: '0'
+                sortOrder: 1
+              f181c54c-1b06-40e4-8c99-4654e99dfb60:
+                required: '0'
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      4c30acfb-8ba5-4ea7-ba87-6f41813ce876:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titulo
+        instructions: ''
+        name: titulo
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      f181c54c-1b06-40e4-8c99-4654e99dfb60:
+        contentColumnType: text
+        fieldGroup: null
+        handle: dlink
+        instructions: ''
+        name: dlink
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: nome
+    name: Nome
     sortOrder: 1
   f4778262-b2eb-429a-b421-446dc9a491bf:
     field: 324f06bb-c16c-4b51-a019-c0b0d0b0a520
@@ -341,6 +454,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   redactor:
     edition: standard
     enabled: true
@@ -818,6 +935,45 @@ sections:
         hasUrls: true
         template: entry.twig
         uriFormat: 'secestmark/{slug}'
+    type: channel
+  fd38b0d2-a927-4ed4-9bc3-c9cefd827e73:
+    enableVersioning: true
+    entryTypes:
+      0825ede3-1c33-4a08-b961-c0244a9d1a78:
+        fieldLayouts:
+          4e39f992-c3cc-41e0-99ad-0e03de77cc14:
+            tabs:
+              -
+                fields:
+                  01928454-af50-45be-9308-176532fed456:
+                    required: false
+                    sortOrder: 4
+                  49e333ec-3c89-4978-99ce-59de0d5c3c04:
+                    required: false
+                    sortOrder: 2
+                  6719b3f6-b2b7-4337-864c-488cf4b8843b:
+                    required: false
+                    sortOrder: 1
+                  9aec6c12-5c00-4015-9494-53c5b1a3b160:
+                    required: false
+                    sortOrder: 3
+                name: Common
+                sortOrder: 1
+        handle: menu
+        hasTitleField: true
+        name: menu
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: menu
+    name: menu
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'menu/{slug}'
     type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:

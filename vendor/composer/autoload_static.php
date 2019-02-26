@@ -38,6 +38,10 @@ class ComposerStaticInit07be5c574daeca48f078dbe14951888c
             'yii\\' => 4,
             'yii2tech\\ar\\softdelete\\' => 23,
         ),
+        'v' => 
+        array (
+            'verbb\\cpnav\\' => 12,
+        ),
         'm' => 
         array (
             'modules\\' => 8,
@@ -185,6 +189,10 @@ class ComposerStaticInit07be5c574daeca48f078dbe14951888c
         'yii2tech\\ar\\softdelete\\' => 
         array (
             0 => __DIR__ . '/..' . '/yii2tech/ar-softdelete/src',
+        ),
+        'verbb\\cpnav\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/verbb/cp-nav/src',
         ),
         'modules\\' => 
         array (
@@ -2757,6 +2765,19 @@ class ComposerStaticInit07be5c574daeca48f078dbe14951888c
         'enshrined\\svgSanitize\\data\\TagInterface' => __DIR__ . '/..' . '/enshrined/svg-sanitize/src/data/TagInterface.php',
         'mikehaertl\\shellcommand\\Command' => __DIR__ . '/..' . '/mikehaertl/php-shellcommand/src/Command.php',
         'modules\\Module' => __DIR__ . '/../..' . '/modules/Module.php',
+        'verbb\\cpnav\\CpNav' => __DIR__ . '/..' . '/verbb/cp-nav/src/CpNav.php',
+        'verbb\\cpnav\\assetbundles\\CpNav\\CpNavAsset' => __DIR__ . '/..' . '/verbb/cp-nav/src/assetbundles/cpnav/CpNavAsset.php',
+        'verbb\\cpnav\\base\\PluginTrait' => __DIR__ . '/..' . '/verbb/cp-nav/src/base/PluginTrait.php',
+        'verbb\\cpnav\\controllers\\LayoutController' => __DIR__ . '/..' . '/verbb/cp-nav/src/controllers/LayoutController.php',
+        'verbb\\cpnav\\controllers\\NavigationController' => __DIR__ . '/..' . '/verbb/cp-nav/src/controllers/NavigationController.php',
+        'verbb\\cpnav\\migrations\\Install' => __DIR__ . '/..' . '/verbb/cp-nav/src/migrations/Install.php',
+        'verbb\\cpnav\\models\\Layout' => __DIR__ . '/..' . '/verbb/cp-nav/src/models/Layout.php',
+        'verbb\\cpnav\\models\\Navigation' => __DIR__ . '/..' . '/verbb/cp-nav/src/models/Navigation.php',
+        'verbb\\cpnav\\records\\Layout' => __DIR__ . '/..' . '/verbb/cp-nav/src/records/Layout.php',
+        'verbb\\cpnav\\records\\Navigation' => __DIR__ . '/..' . '/verbb/cp-nav/src/records/Navigation.php',
+        'verbb\\cpnav\\services\\CpNavService' => __DIR__ . '/..' . '/verbb/cp-nav/src/services/CpNavService.php',
+        'verbb\\cpnav\\services\\LayoutService' => __DIR__ . '/..' . '/verbb/cp-nav/src/services/LayoutService.php',
+        'verbb\\cpnav\\services\\NavigationService' => __DIR__ . '/..' . '/verbb/cp-nav/src/services/NavigationService.php',
         'yii2tech\\ar\\softdelete\\SoftDeleteBehavior' => __DIR__ . '/..' . '/yii2tech/ar-softdelete/src/SoftDeleteBehavior.php',
         'yii2tech\\ar\\softdelete\\SoftDeleteQueryBehavior' => __DIR__ . '/..' . '/yii2tech/ar-softdelete/src/SoftDeleteQueryBehavior.php',
         'yii\\BaseYii' => __DIR__ . '/..' . '/yiisoft/yii2/BaseYii.php',

@@ -50,27 +50,27 @@
     </button>
     <div class="collapse navbar-collapse"  id="navbarNavDropdown">
       <ul class="navbar-nav">
-        {% for entry in craft.entries.section('menu') %}
-        {% for block in entry.links %}
-        <li class="nav-item">
-          <a class="nav-link active" href="{{block.dlink}}">{{block.titulo}}</a>
-        </li>
-        {% endfor %}
-        {% endfor %}
-        {% for entry in craft.entries.section('menudrop') %}
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{entry.title}}</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            {% for block in entry.links %}
-            <a class="dropdown-item" href="{{block.dlink}}">{{block.titulo}}</a>
-            {% endfor %}
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
-  {% import "_macros.html" as macros %}
+      {% set allentries = craft.entries.section('menu').order('inposition asc') %}
+      {% for entry in allentries %}
+      {% if entry.isdrop == 0 %}
+      <li class="nav-item">
+        <a class="nav-link active" href="{{entry.uurl}}">{{entry.title}}</a>
+      </li>
+      {% elseif entry.isdrop == 1 %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{entry.uurl}}" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{entry.title}}</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          {% for block in entry.links %}
+          <a class="dropdown-item" href="{{block.dlink}}">{{block.titulo}}</a>
+          {% endfor %}
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+{% import "_macros.html" as macros %}
 {% block main %}{% endblock %}
 <footer class="bd-footer text-muted">
   <div class="container-fluid p-3 p-md-5">

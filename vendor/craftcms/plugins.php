@@ -39,4 +39,25 @@ return array (
     'developerEmail' => 'support@craftcms.com',
     'documentationUrl' => 'https://github.com/craftcms/redactor',
   ),
+  'verbb/cp-nav' => 
+  array (
+    'class' => 'verbb\\cpnav\\CpNav',
+    'basePath' => $vendorDir . '/verbb/cp-nav/src',
+    'handle' => 'cp-nav',
+    'aliases' => 
+    array (
+      '@verbb/cpnav' => $vendorDir . '/verbb/cp-nav/src',
+    ),
+    'name' => 'Control Panel Nav',
+    'version' => '2.0.9',
+    'schemaVersion' => '2.0.0',
+    'description' => 'Control Panel Nav helps you managing your Control Panel navigation.',
+    'developer' => 'Verbb',
+    'developerUrl' => 'http://verbb.io',
+    'developerEmail' => 'support@verbb.io',
+    'documentationUrl' => 'https://github.com/verbb/cp-nav',
+    'changelogUrl' => 'https://raw.githubusercontent.com/verbb/cp-nav/craft-3/CHANGELOG.md',
+    'hasCpSettings' => true,
+    'hasCpSection' => false,
+  ),
 );
