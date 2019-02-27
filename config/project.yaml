@@ -1,21 +1,181 @@
-dateModified: 1550662451
+dateModified: 1551196409
 email:
   fromEmail: andrecorreia.drible@gmail.com
   fromName: 'We Are Drible'
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  8b8b2429-b466-4fb7-b4c4-35bf17050697:
+    name: menu
   d80a6993-59a6-40cf-ba16-58860e29c890:
     name: Common
 fields:
-  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+  01928454-af50-45be-9308-176532fed456:
     contentColumnType: string
     fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
-    handle: adicionar
+    handle: links
     instructions: ''
-    name: Conteudo
+    name: links
     searchable: true
     settings:
-      contentTable: '{{%matrixcontent_adicionar}}'
+      contentTable: '{{%matrixcontent_links}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  050417d3-f9ec-4972-a7b7-d305239f2dd7:
+    contentColumnType: text
+    fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
+    handle: qlink
+    instructions: ''
+    name: qlink
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  07fdf177-9203-4b68-b274-688a721277e6:
+    contentColumnType: text
+    fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
+    handle: droplink
+    instructions: ''
+    name: droplink
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  324f06bb-c16c-4b51-a019-c0b0d0b0a520:
+    contentColumnType: string
+    fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
+    handle: menutemplate
+    instructions: ''
+    name: menutemplate
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_menutemplate}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  37820e04-5d39-4a4c-bfd8-24ce4e9abefe:
+    contentColumnType: text
+    fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
+    handle: nome
+    instructions: ''
+    name: Nome
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  49e333ec-3c89-4978-99ce-59de0d5c3c04:
+    contentColumnType: smallint(2)
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: inposition
+    instructions: ''
+    name: inposition
+    searchable: true
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: '10'
+      min: '0'
+      size: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: matriz
+    instructions: ''
+    name: matriz
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_matriz}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
+  6719b3f6-b2b7-4337-864c-488cf4b8843b:
+    contentColumnType: text
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: uurl
+    instructions: ''
+    name: url
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9aec6c12-5c00-4015-9494-53c5b1a3b160:
+    contentColumnType: boolean
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: isdrop
+    instructions: ''
+    name: isdrop
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  cfb1df79-c93c-4a82-8e48-23d7b5f90789:
+    contentColumnType: text
+    fieldGroup: 8b8b2429-b466-4fb7-b4c4-35bf17050697
+    handle: nomedrop
+    instructions: ''
+    name: Nomedrop
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e6457699-d552-41f4-9888-d97d0cc0add5:
+    contentColumnType: string
+    fieldGroup: d80a6993-59a6-40cf-ba16-58860e29c890
+    handle: links
+    instructions: ''
+    name: links
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_links}}'
       localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
@@ -23,25 +183,78 @@ fields:
     translationMethod: site
     type: craft\fields\Matrix
 matrixBlockTypes:
-  4455bf9b-dec9-4f29-b495-eb3f6d7d47fe:
-    field: 62aa662d-997b-4226-be5a-cb4c0dc8c919
+  80fad227-5223-4d89-9b70-6cd862c820d8:
+    field: 324f06bb-c16c-4b51-a019-c0b0d0b0a520
     fieldLayouts:
-      cfcd56c4-c4b8-4c9d-800c-241ea28458f7:
+      73ddb463-1d93-42b3-a865-8fc7dd1dc760:
         tabs:
           -
             fields:
-              5142ce04-acfc-44a4-be16-7f2a7452a24b:
+              91425396-25f1-475e-90fc-0d25e1bb4c54:
+                required: '0'
+                sortOrder: 1
+              f7ac9548-465d-4877-8f11-3e71b42c73ff:
+                required: '0'
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      91425396-25f1-475e-90fc-0d25e1bb4c54:
+        contentColumnType: text
+        fieldGroup: null
+        handle: nome
+        instructions: ''
+        name: Nome
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      f7ac9548-465d-4877-8f11-3e71b42c73ff:
+        contentColumnType: text
+        fieldGroup: null
+        handle: tlink
+        instructions: ''
+        name: tlink
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: nome
+    name: Nome
+    sortOrder: 1
+  b567589f-6f54-4779-911a-448e3aaa6f4d:
+    field: 5ae67bb7-b1ca-4421-89b9-a77406ba87fb
+    fieldLayouts:
+      18621506-a59d-48e1-9888-56ba4a810590:
+        tabs:
+          -
+            fields:
+              a632abca-2b60-4231-9ee8-268ea321761e:
                 required: '0'
                 sortOrder: 1
             name: Content
             sortOrder: 1
     fields:
-      5142ce04-acfc-44a4-be16-7f2a7452a24b:
+      a632abca-2b60-4231-9ee8-268ea321761e:
         contentColumnType: text
         fieldGroup: null
-        handle: conteudo
+        handle: body
         instructions: ''
-        name: Conteudo
+        name: body
         searchable: '1'
         settings:
           availableTransforms: '*'
@@ -54,428 +267,713 @@ matrixBlockTypes:
         translationKeyFormat: null
         translationMethod: none
         type: craft\redactor\Field
-    handle: conteudo
-    name: Conteudo
+    handle: body
+    name: body
+    sortOrder: 1
+  b5b78214-c238-4283-9cef-24f3e9e1d8a5:
+    field: 01928454-af50-45be-9308-176532fed456
+    fieldLayouts:
+      1e680e6c-5434-46da-a924-48a41ce89fc3:
+        tabs:
+          -
+            fields:
+              4c30acfb-8ba5-4ea7-ba87-6f41813ce876:
+                required: '0'
+                sortOrder: 1
+              f181c54c-1b06-40e4-8c99-4654e99dfb60:
+                required: '0'
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      4c30acfb-8ba5-4ea7-ba87-6f41813ce876:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titulo
+        instructions: ''
+        name: titulo
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      f181c54c-1b06-40e4-8c99-4654e99dfb60:
+        contentColumnType: text
+        fieldGroup: null
+        handle: dlink
+        instructions: ''
+        name: dlink
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: nome
+    name: Nome
+    sortOrder: 1
+  f4778262-b2eb-429a-b421-446dc9a491bf:
+    field: 324f06bb-c16c-4b51-a019-c0b0d0b0a520
+    fieldLayouts:
+      d8524b17-b890-4b7d-a233-27467ff2d03e:
+        tabs:
+          -
+            fields:
+              6e5110b5-4a3a-4ea8-abef-3dbecf925f27:
+                required: '0'
+                sortOrder: 1
+              83406c6f-f961-4cda-8bf0-4f6da7453212:
+                required: '0'
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      6e5110b5-4a3a-4ea8-abef-3dbecf925f27:
+        contentColumnType: text
+        fieldGroup: null
+        handle: nomedrop
+        instructions: ''
+        name: Nomedrop
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      83406c6f-f961-4cda-8bf0-4f6da7453212:
+        contentColumnType: text
+        fieldGroup: null
+        handle: linkdrop
+        instructions: ''
+        name: linkdrop
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: drop
+    name: Drop
+    sortOrder: 2
+  f68298a1-7600-46af-a5eb-822aa731d8e7:
+    field: e6457699-d552-41f4-9888-d97d0cc0add5
+    fieldLayouts:
+      00cb68d5-dff5-40c8-9ab9-de09b412dacc:
+        tabs:
+          -
+            fields:
+              2780dde2-94da-48aa-827d-a68fec71cb58:
+                required: '0'
+                sortOrder: 2
+              9d6036a6-4135-4848-b85c-9be602392b23:
+                required: '0'
+                sortOrder: 3
+              c40eddfc-caa3-4771-9a57-304a5407c55f:
+                required: '0'
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      2780dde2-94da-48aa-827d-a68fec71cb58:
+        contentColumnType: text
+        fieldGroup: null
+        handle: dlink
+        instructions: ''
+        name: dlink
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      9d6036a6-4135-4848-b85c-9be602392b23:
+        contentColumnType: text
+        fieldGroup: null
+        handle: drop
+        instructions: ''
+        name: drop
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      c40eddfc-caa3-4771-9a57-304a5407c55f:
+        contentColumnType: text
+        fieldGroup: null
+        handle: titulo
+        instructions: ''
+        name: titulo
+        searchable: '1'
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: titulo
+    name: titulo
     sortOrder: 1
 plugins:
   ckeditor:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.2.1
 sections:
-  02a0d967-4c6b-4c11-b5d1-98fd4539bc4b:
+  2e1d3e50-4673-4301-a85f-9c0b47273fdb:
     enableVersioning: true
     entryTypes:
-      eef536a9-44d1-43e3-b9af-9ce7fef29ed5:
+      85d580ba-71f3-4fda-af58-49698dee817c:
         fieldLayouts:
-          7ef676e3-7a7a-433f-9e7a-cd505b5ca8a8:
+          b823508b-74cb-45e7-bc34-e8e1541cf9ef:
             tabs:
               -
                 fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
                     required: false
-                    sortOrder: 1
-                name: Processos
-                sortOrder: 1
-        handle: webprocessos
-        hasTitleField: true
-        name: Webprocessos
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: webprocessos
-    name: Webprocessos
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'webprocessos/{slug}'
-    type: channel
-  2aa082f4-7ddf-480d-9505-71928d0cce16:
-    enableVersioning: true
-    entryTypes:
-      321a12cf-b63e-4928-bce3-9e53c023f557:
-        fieldLayouts:
-          24223f81-477f-432c-b175-5cdff51d3484:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Web
-                sortOrder: 1
-        handle: estagiariosweb
-        hasTitleField: true
-        name: estagiariosweb
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: estagiariosweb
-    name: estagiariosweb
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'estagiariosweb/{slug}'
-    type: channel
-  2af9443c-d1f5-4fab-a950-56fa0f916c9c:
-    enableVersioning: true
-    entryTypes:
-      0a93a963-c882-4390-b8f8-7c1df237275a:
-        fieldLayouts:
-          a8fac8e5-fa9b-4cb8-a975-809ae749a6fd:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Inicio
-                sortOrder: 1
-        handle: estagiariosinicio
-        hasTitleField: true
-        name: estagiariosinicio
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: estagiariosinicio
-    name: estagiariosinicio
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'estagiariosinicio/{slug}'
-    type: channel
-  3e2c251e-47e5-4d54-b710-219241a40fd3:
-    enableVersioning: true
-    entryTypes:
-      e7079a23-553a-48c0-92a8-b0d2f6ef9c24:
-        fieldLayouts:
-          ca39f9af-4dfe-4396-a279-753a3f43f848:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Desgin
-                sortOrder: 1
-        handle: estagiariosdesign
-        hasTitleField: true
-        name: estagiariosdesign
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: estagiariosdesign
-    name: estagiariosdesign
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'estagiariosdesign/{slug}'
-    type: channel
-  449613a1-93d9-450b-90bc-a49cf2bf5348:
-    enableVersioning: true
-    entryTypes:
-      514dfc8a-76e1-4c24-86ed-14df1ddf58c5:
-        fieldLayouts:
-          7d95a552-175e-4f7d-86bd-fec6be44c9a6:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Scripts
-                sortOrder: 1
-        handle: webscripts
-        hasTitleField: true
-        name: Webscripts
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: webscripts
-    name: Webscripts
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'webscripts/{slug}'
-    type: channel
-  5381c9cf-a708-4766-93e0-249c197371ea:
-    enableVersioning: true
-    entryTypes:
-      d00b442c-27d8-42ea-8ec7-606cfdfb8ae1:
-        fieldLayouts:
-          0dd28056-9c60-4534-bb37-44a740b49e5a:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Inicio
-                sortOrder: 1
-        handle: webinicio
-        hasTitleField: true
-        name: Webinicio
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: webinicio
-    name: Webinicio
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'web/{slug}'
-    type: channel
-  5912f87b-0e8b-488b-b74a-605f37987b26:
-    enableVersioning: true
-    entryTypes:
-      3c3fcbe7-6769-4a70-bd9f-225c9103155d:
-        fieldLayouts:
-          9f6818b6-d7c9-4620-b6b5-b91892e254d8:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: 'Marketing Digital'
-                sortOrder: 1
-        handle: marketingdigital
-        hasTitleField: true
-        name: 'Marketing digital'
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: marketingdigital
-    name: 'Marketing digital'
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'marketing-digital/{slug}'
-    type: channel
-  685ce4ee-3104-4cec-b39e-6d39fe16a610:
-    enableVersioning: true
-    entryTypes:
-      4028929c-e6d2-457e-aa4d-de25ae29658d:
-        fieldLayouts:
-          060fd8e0-24a9-4a80-93d5-d393a7dab265:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Frontend
-                sortOrder: 1
-        handle: webfrontend
-        hasTitleField: true
-        name: Webfrontend
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: webfrontend
-    name: Webfrontend
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'webfrontend/{slug}'
-    type: channel
-  83ce53aa-8a13-4498-9442-2ee333f9cbb5:
-    enableVersioning: true
-    entryTypes:
-      40b85c14-b0fe-4614-ba66-0ff278bde55e:
-        handle: estagiarios
-        hasTitleField: true
-        name: estagiarios
-        sortOrder: 1
-        titleFormat: null
-        titleLabel: Título
-    handle: estagiarios
-    name: Estagiarios
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'estagiarios/{slug}'
-    type: channel
-  8ee29d97-a5d6-4438-86ed-a41692a85c3a:
-    enableVersioning: true
-    entryTypes:
-      3e9e7519-a13a-4d20-9384-e58e8b31c9ca:
-        fieldLayouts:
-          01ed8c0e-68d4-42bf-99a5-db177316878f:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Marketing
-                sortOrder: 1
-        handle: estagiariosmarketing
-        hasTitleField: true
-        name: estagiariosmarketing
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: estagiariosmarketing
-    name: estagiariosmarketing
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'estagiariosmarketing/{slug}'
-    type: channel
-  ab03ac80-03f4-4c36-ac71-8b38b6716c4e:
-    enableVersioning: true
-    entryTypes:
-      6d6771cd-5cd9-442f-8672-66df34894017:
-        fieldLayouts:
-          d978dd04-a016-462c-bc6e-0eb89e37a9d2:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Inicio
-                sortOrder: 1
-        handle: inicio
-        hasTitleField: true
-        name: inicio
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: inicio
-    name: Inicio
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'inicio/{slug}'
-    type: channel
-  b708524d-72d0-4271-aeab-647e1a015205:
-    enableVersioning: true
-    entryTypes:
-      ed882f61-277c-4585-96c7-0abc5090df11:
-        fieldLayouts:
-          30ea1834-2ecc-47fb-bb64-23e11659fa8f:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
-                    required: false
-                    sortOrder: 1
-                name: Lastday
-                sortOrder: 1
-        handle: estagiarioslastday
-        hasTitleField: true
-        name: estagiarioslastday
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Título
-    handle: estagiarioslastday
-    name: estagiarioslastday
-    propagateEntries: true
-    siteSettings:
-      3e504962-4af6-4a26-bde2-ce55b39496f7:
-        enabledByDefault: true
-        hasUrls: true
-        template: ''
-        uriFormat: 'estagiarioslastday/{slug}'
-    type: channel
-  f2ab9f61-9258-4f69-b1b9-72d4ec042eed:
-    enableVersioning: true
-    entryTypes:
-      212f325c-613f-450c-bb03-fe1a73734b1b:
-        fieldLayouts:
-          42fbb5aa-d6b0-4adc-bc6b-20e895c8792d:
-            tabs:
-              -
-                fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+                    sortOrder: 2
+                  5f272906-37c3-4c68-9b8f-f0b085237d61:
                     required: false
                     sortOrder: 1
                 name: 'Tab 1'
                 sortOrder: 1
-        handle: estagiarioswebdrible
+        handle: secscrpt
         hasTitleField: true
-        name: estagiarioswebdrible
+        name: secscrpt
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
-    handle: estagiarioswebdrible
-    name: estagiarioswebdrible
+    handle: scripts
+    name: Scripts
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
-        template: ''
-        uriFormat: 'estagiarioswebdrible/{slug}'
+        template: entry.twig
+        uriFormat: 'scripts/{slug}'
     type: channel
-  fa3ac507-6c8f-4881-8177-ed801e9a46e3:
+  376d285a-4661-45ea-8cf4-43db0ec693ae:
     enableVersioning: true
     entryTypes:
-      b5616e85-a66b-40dd-ab4e-1a5f77eec684:
+      08bb1b96-60c2-49a6-8d80-14eea55b6b61:
         fieldLayouts:
-          36f2f747-b63b-4ed7-abe8-783c3bca0fcd:
+          a6e58471-949b-480c-b090-81b6a5879cbc:
             tabs:
               -
                 fields:
-                  62aa662d-997b-4226-be5a-cb4c0dc8c919:
+                  e6457699-d552-41f4-9888-d97d0cc0add5:
                     required: false
                     sortOrder: 1
-                name: Design
+                name: 'Tab 1'
                 sortOrder: 1
-        handle: design
+        handle: menu
         hasTitleField: true
-        name: Design
+        name: menu
         sortOrder: 1
         titleFormat: ''
         titleLabel: Título
-    handle: design
-    name: Design
+    handle: menu
+    name: menu
     propagateEntries: true
     siteSettings:
       3e504962-4af6-4a26-bde2-ce55b39496f7:
         enabledByDefault: true
         hasUrls: true
         template: ''
-        uriFormat: 'design/{slug}'
+        uriFormat: 'menu/{slug}'
+    type: channel
+  5ad778b5-59a2-4b97-9758-8658d32f3382:
+    enableVersioning: true
+    entryTypes:
+      37fb5dda-f26f-4dfd-b32b-0488ce17b235:
+        fieldLayouts:
+          cae3c0c6-011c-4feb-8fb9-f5042a889fb8:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestini
+        hasTitleField: true
+        name: secestini
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestini
+    name: 'Estagiarios Inicio'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secestini/{slug}'
+    type: channel
+  65d60dc5-9e07-409a-aee5-55f39f83e9bd:
+    enableVersioning: true
+    entryTypes:
+      9b66dd59-3e07-4e33-8c84-2a29b5a40825:
+        fieldLayouts:
+          04be0e85-b4a3-4e66-9277-ccb4a49c853a:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secwebiniq
+        hasTitleField: true
+        name: secwebiniq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secwebini
+    name: 'Web Inicio'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secwebini/{slug}'
+    type: channel
+  68c9bf3f-9c5e-4821-91f0-f22dd52ace6c:
+    enableVersioning: true
+    entryTypes:
+      47972020-0f8a-4346-b283-d20fdb241910:
+        handle: listas
+        hasTitleField: true
+        name: Listas
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Título
+    handle: listas
+    name: Listas
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: listas/index.twig
+        uriFormat: '{slug}'
+    type: channel
+  74bd2609-76ca-4a0e-9a07-95498dfef93d:
+    enableVersioning: true
+    entryTypes:
+      ec344267-bb67-4feb-9623-946bf32cc485:
+        fieldLayouts:
+          1acc1081-fa30-45b7-8b07-6e3a499818c3:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secdsginiq
+        hasTitleField: true
+        name: secdsginiq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secdsgini
+    name: 'Design Inicio'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secdsgini/{slug}'
+    type: channel
+  996b1040-6221-41d5-ab49-9171dbcb9fe4:
+    enableVersioning: true
+    entryTypes:
+      dd2a7d4c-927d-45bb-93e2-be9db731beb8:
+        fieldLayouts:
+          c095727b-49da-48e8-aa9c-f790eb714fae:
+            tabs:
+              -
+                fields:
+                  e6457699-d552-41f4-9888-d97d0cc0add5:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: menudrop
+        hasTitleField: true
+        name: menudrop
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: menudrop
+    name: menudrop
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'menudrop/{slug}'
+    type: channel
+  9d14100b-5eb5-4b00-b50c-eb32111eac35:
+    enableVersioning: true
+    entryTypes:
+      636587f4-4e79-43b4-b236-dec2d6802339:
+        fieldLayouts:
+          607c6ab8-d2f4-4d05-b8c8-82433dacfb9f:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secinitq
+        hasTitleField: true
+        name: secinitq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secinit
+    name: Home
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secinit/{slug}'
+    type: channel
+  b04f16df-30d9-4a5f-94de-415a86f9f037:
+    enableVersioning: true
+    entryTypes:
+      3b8164f3-e2fc-4f7d-9c2a-4a5e4273169a:
+        fieldLayouts:
+          64d1c510-bee4-44f3-9397-a6dac6b9c4f4:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestdesign
+        hasTitleField: true
+        name: secestdesign
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestdesign
+    name: 'Estagiarios Design'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secestdesign/{slug}'
+    type: channel
+  b1c13b3a-e2e9-4566-84e1-79f48a659a40:
+    enableVersioning: true
+    entryTypes:
+      087145b4-ce19-418e-9962-34c7ab861cbe:
+        fieldLayouts:
+          ee0f3f93-4e19-4799-9675-9ea040247b02:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestwebq
+        hasTitleField: true
+        name: secestwebq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestweb
+    name: 'Estagiarios Web'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secestweb/{slug}'
+    type: channel
+  cfa41b3c-3f63-43e9-9579-df24273c648a:
+    enableVersioning: true
+    entryTypes:
+      482196bd-9475-4d78-ace1-70f36e0b8d88:
+        fieldLayouts:
+          3edad9d9-fee3-4497-b2d9-87ab6fe50b67:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secultq
+        hasTitleField: true
+        name: secultq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secult
+    name: Ultimo
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secult/{slug}'
+    type: channel
+  d02dc1ee-39ff-4b0f-bbdf-486b6545afe9:
+    enableVersioning: true
+    entryTypes:
+      f54c279d-3052-4377-a5d1-2919e975cc4b:
+        fieldLayouts:
+          aafe7620-7968-46fd-ab2c-50184d7e7416:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secprocew
+        hasTitleField: true
+        name: secproces
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: processos
+    name: Processos
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: /entry.twig
+        uriFormat: 'processos/{slug}'
+    type: channel
+  d170c2ba-3709-4bb5-bf0f-552fb8c028b6:
+    enableVersioning: true
+    entryTypes:
+      b1cb3fff-2121-4f23-8988-812cd17569a1:
+        fieldLayouts:
+          2ff96206-eddc-430e-b10c-037da0f9ae5a:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestwebdrible
+        hasTitleField: true
+        name: Estagiarios-web-hellodrible
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestwebdrible
+    name: Estagiarios-web-hellodrible
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'estagiarios-web-hellodrible/{slug}'
+    type: channel
+  d56d1cba-b4cb-4522-b45d-d6a04a3e2dbf:
+    enableVersioning: true
+    entryTypes:
+      e2a0ea59-64f5-4ad2-a96d-64fb0a0be780:
+        fieldLayouts:
+          9ae46b69-1015-48f9-9742-465eb1009fd9:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secfrontq
+        hasTitleField: true
+        name: secfrontq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secfront
+    name: Frontend
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secfront/{slug}'
+    type: channel
+  e9531bad-c98d-4d8a-aeab-6257ae574148:
+    enableVersioning: true
+    entryTypes:
+      f4f753d8-e4c1-4e65-a853-f8e6fdaacead:
+        fieldLayouts:
+          5f600c90-cd3b-4389-b93f-a8e6b747c847:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secmarkq
+        hasTitleField: true
+        name: secmarkq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secmark
+    name: Marketing
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secmark/{slug}'
+    type: channel
+  f08e3d51-fecb-466b-a970-f51fe8baf593:
+    enableVersioning: true
+    entryTypes:
+      1d0250f8-e406-4d30-8cf5-f02e0f9732c2:
+        fieldLayouts:
+          276e9a43-7229-4cbb-8fd8-80225cb78faf:
+            tabs:
+              -
+                fields:
+                  5ae67bb7-b1ca-4421-89b9-a77406ba87fb:
+                    required: false
+                    sortOrder: 1
+                name: 'Tab 1'
+                sortOrder: 1
+        handle: secestmarkq
+        hasTitleField: true
+        name: secestmarkq
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: secestmark
+    name: 'Estagiarios Marketing'
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: entry.twig
+        uriFormat: 'secestmark/{slug}'
+    type: channel
+  fd38b0d2-a927-4ed4-9bc3-c9cefd827e73:
+    enableVersioning: true
+    entryTypes:
+      0825ede3-1c33-4a08-b961-c0244a9d1a78:
+        fieldLayouts:
+          4e39f992-c3cc-41e0-99ad-0e03de77cc14:
+            tabs:
+              -
+                fields:
+                  01928454-af50-45be-9308-176532fed456:
+                    required: false
+                    sortOrder: 4
+                  49e333ec-3c89-4978-99ce-59de0d5c3c04:
+                    required: false
+                    sortOrder: 2
+                  6719b3f6-b2b7-4337-864c-488cf4b8843b:
+                    required: false
+                    sortOrder: 1
+                  9aec6c12-5c00-4015-9494-53c5b1a3b160:
+                    required: false
+                    sortOrder: 3
+                name: Common
+                sortOrder: 1
+        handle: menu
+        hasTitleField: true
+        name: menu
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Título
+    handle: menu
+    name: menu
+    propagateEntries: true
+    siteSettings:
+      3e504962-4af6-4a26-bde2-ce55b39496f7:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'menu/{slug}'
     type: channel
 siteGroups:
   4c8248b8-ac7a-4f7a-ad70-fc5e93513af2:
@@ -487,32 +985,26 @@ sites:
     hasUrls: true
     language: pt
     name: Home
-    primary: true
+    primary: '1'
     siteGroup: 4c8248b8-ac7a-4f7a-ad70-fc5e93513af2
-    sortOrder: 1
+    sortOrder: '1'
 system:
   edition: solo
   live: true
   name: 'We Are Drible'
   schemaVersion: 3.1.23
-  timeZone: America/Los_Angeles
+  timeZone: Europe/London
 users:
   allowPublicRegistration: false
   defaultGroup: null
-  fieldLayouts:
-    5247ae61-53a0-467c-9de3-6ba2323174b9:
-      tabs:
-        -
-          name: teste
-          sortOrder: 1
-  photoSubpath: null
+  photoSubpath: ''
   photoVolumeUid: null
   requireEmailVerification: true
 volumes:
-  0d4b0993-7f8e-496b-85fa-26a8726d211b:
+  75c7b344-e4a8-4a63-8637-a10ebdde28cd:
     handle: img
     hasUrls: true
-    name: img
+    name: Img
     settings:
       path: '@webroot/img'
     sortOrder: null

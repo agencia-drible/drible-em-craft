@@ -1,21 +1,16 @@
 {% extends 'layout' %}
 {% block main %}
-<body>
-  <main class="bd-masthead" id="content" role="main">
-    <div class="container">
-
-    {% for entry in craft.entries.section('inicio') %}
-
-      {% for block in entry.adicionar %}
-
-        {{ block.conteudo }}
-
-
-      {% endfor %}
-
-    {% endfor %}
+<main class="bd-masthead" id="content" role="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-sm-12 col-md-12 mx-auto">
+        {% for es in craft.entries.section('secinit') %}
+        {% for block in es.matriz %}
+        {{ block.body }}
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
   </div>
 </main>
-
-</body>
 {% endblock %}

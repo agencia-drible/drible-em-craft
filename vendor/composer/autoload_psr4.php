@@ -22,6 +22,7 @@ return array(
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap/src'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'yii2tech\\ar\\softdelete\\' => array($vendorDir . '/yii2tech/ar-softdelete/src'),
+    'verbb\\cpnav\\' => array($vendorDir . '/verbb/cp-nav/src'),
     'modules\\' => array($baseDir . '/modules'),
     'mikehaertl\\shellcommand\\' => array($vendorDir . '/mikehaertl/php-shellcommand/src'),
     'enshrined\\svgSanitize\\' => array($vendorDir . '/enshrined/svg-sanitize/src'),
